@@ -1114,20 +1114,47 @@ h2 {
   padding-block: 91px 100px;
 }
 
-.location-grid {
+.location-carousel {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
+}
+
+.location-controls {
+  justify-content: flex-end;
+}
+
+.location-grid {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  cursor: grab;
+  padding: 0 1px 15px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: rgba(198, 166, 255, 0.45) rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.location-grid.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.location-grid.is-dragging * {
+  pointer-events: none;
 }
 
 .location-card {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
   background: #171923;
-}
-
-.location-card-pilgrim {
-  grid-column: 1 / -1;
+  scroll-snap-align: start;
 }
 
 .location-art {
@@ -1137,7 +1164,11 @@ h2 {
   isolation: isolate;
 }
 
-.location-card-pilgrim .location-art {
+.location-card-pilgrim .location-art,
+.location-card-temiscira .location-art,
+.location-card-downtown .location-art,
+.location-card-melbourne .location-art,
+.location-card-terra-12 .location-art {
   height: auto;
   aspect-ratio: 2 / 1;
 }
@@ -1299,6 +1330,42 @@ h2 {
   color: var(--muted);
   font-size: 10px;
   line-height: 1.75;
+}
+
+.location-stories {
+  margin-bottom: 15px;
+}
+
+.location-stories-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d8d9df;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.location-stories ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.location-stories li {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid rgba(155, 170, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(110, 123, 255, 0.08);
+  color: #dfe4ff;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .location-detail {
@@ -1659,6 +1726,10 @@ h2 {
     gap: 13px;
   }
 
+  .location-card {
+    flex-basis: 100%;
+  }
+
   .location-art {
     height: 160px;
   }
@@ -1891,8 +1962,11 @@ h2 {
   }
 
   .location-grid {
-    grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .location-card {
+    flex-basis: 100%;
   }
 
   .location-art {

@@ -179,6 +179,103 @@ shelfPanels.forEach((panel) => {
   syncControls();
 });
 
+const locationCarousels = [...document.querySelectorAll(".location-carousel")];
+
+locationCarousels.forEach((carousel) => {
+  const grid = carousel.querySelector(".location-grid");
+  if (!grid) {
+    return;
+  }
+
+  const syncControls = () => {
+    const hasOverflow = grid.scrollWidth > grid.clientWidth + 1;
+    const atStart = grid.scrollLeft <= 1;
+    const atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1;
+
+    carousel.querySelectorAll(".shelf-arrow").forEach((button) => {
+      const direction = Number(button.dataset.direction);
+      button.disabled = !hasOverflow || (direction < 0 ? atStart : atEnd);
+    });
+  };
+
+  grid.addEventListener("scroll", syncControls, { passive: true });
+  carousel.querySelectorAll(".shelf-arrow").forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = grid.querySelector(".location-card");
+      const gap = Number.parseFloat(getComputedStyle(grid).columnGap) || Number.parseFloat(getComputedStyle(grid).gap) || 0;
+      const distance = card ? card.getBoundingClientRect().width + gap : grid.clientWidth * 0.8;
+      grid.scrollBy({
+        left: distance * Number(button.dataset.direction),
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+      });
+    });
+  });
+
+  let dragStartX = 0;
+  let scrollStart = 0;
+  let didDrag = false;
+
+  grid.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "mouse" || event.button !== 0 || event.target.closest("a, button")) {
+      return;
+    }
+
+    dragStartX = event.clientX;
+    scrollStart = grid.scrollLeft;
+    didDrag = false;
+    grid.setPointerCapture(event.pointerId);
+  });
+
+  grid.addEventListener("pointermove", (event) => {
+    if (!grid.hasPointerCapture(event.pointerId)) {
+      return;
+    }
+
+    const distance = event.clientX - dragStartX;
+    if (Math.abs(distance) > 4) {
+      didDrag = true;
+      grid.classList.add("is-dragging");
+      grid.scrollLeft = scrollStart - distance;
+    }
+  });
+
+  const finishDragging = (event) => {
+    if (grid.hasPointerCapture(event.pointerId)) {
+      grid.releasePointerCapture(event.pointerId);
+    }
+    grid.classList.remove("is-dragging");
+  };
+
+  grid.addEventListener("pointerup", finishDragging);
+  grid.addEventListener("pointercancel", finishDragging);
+  grid.addEventListener("click", (event) => {
+    if (didDrag) {
+      event.preventDefault();
+      event.stopPropagation();
+      didDrag = false;
+    }
+  }, true);
+
+  syncControls();
+});
+
 window.addEventListener("resize", () => {
   shelfPanels.forEach(updateShelfControls);
+  locationCarousels.forEach((carousel) => {
+    const grid = carousel.querySelector(".location-grid");
+    if (grid) {
+      const syncControls = () => {
+        const hasOverflow = grid.scrollWidth > grid.clientWidth + 1;
+        const atStart = grid.scrollLeft <= 1;
+        const atEnd = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1;
+
+        carousel.querySelectorAll(".shelf-arrow").forEach((button) => {
+          const direction = Number(button.dataset.direction);
+          button.disabled = !hasOverflow || (direction < 0 ? atStart : atEnd);
+        });
+      };
+
+      syncControls();
+    }
+  });
 });
