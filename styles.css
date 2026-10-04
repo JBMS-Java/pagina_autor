@@ -1826,13 +1826,28 @@ h2 {
     max-width: 450px;
   }
 
+  .book-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    overflow: visible;
+    padding-bottom: 12px;
+  }
+
+  .book-tab {
+    min-width: 0;
+    padding-inline: 8px;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
   .book-grid {
-    gap: 17px;
+    gap: 12px;
   }
 
   .book-card {
-    flex-basis: 84vw;
-    max-width: 340px;
+    flex-basis: 100%;
+    max-width: none;
   }
 
   .shelf-toolbar {
