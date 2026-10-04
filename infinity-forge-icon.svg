@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="12" y1="10" x2="65" y2="65" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0A8"/>
+      <stop offset=".55" stop-color="#F3D36A"/>
+      <stop offset="1" stop-color="#C89D45"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="5" y1="4" x2="68" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C6A6FF"/>
+      <stop offset="1" stop-color="#7654B7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="38" cy="38" r="33" fill="#0B0917" stroke="url(#violet)" stroke-width="1.5"/>
+  <circle cx="38" cy="38" r="28" stroke="#F3D36A" stroke-opacity=".66"/>
+  <path d="M38 7L40.7 12.5L46.8 10.7L45 16.8L50.5 19.5L44.8 22L46.3 28.2L40.4 26L38 31.5L35.6 26L29.7 28.2L31.2 22L25.5 19.5L31 16.8L29.2 10.7L35.3 12.5L38 7Z" fill="url(#gold)"/>
+  <path d="M18 38C18 32.5 22.5 28 28 28C32.5 28 35.4 32 38 38C40.6 44 43.5 48 48 48C53.5 48 58 43.5 58 38C58 32.5 53.5 28 48 28C43.5 28 40.6 34 38 38C35.4 42 32.5 48 28 48C22.5 48 18 43.5 18 38Z" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 29V53M36 29H49M36 39H46" stroke="#FBF9FF" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

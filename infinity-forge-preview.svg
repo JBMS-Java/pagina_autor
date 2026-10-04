@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" fill="none">
+  <defs>
+    <radialGradient id="space" cx="0" cy="0" r="1" gradientTransform="translate(460 260) rotate(90) scale(390 650)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21183B"/>
+      <stop offset="1" stop-color="#0B0917"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="300" y1="120" x2="580" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0A8"/>
+      <stop offset=".48" stop-color="#F3D36A"/>
+      <stop offset="1" stop-color="#C89D45"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="230" y1="125" x2="410" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C6A6FF"/>
+      <stop offset="1" stop-color="#7654B7"/>
+    </linearGradient>
+    <filter id="glow" x="250" y="62" width="420" height="420" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="520" rx="18" fill="url(#space)"/>
+  <g opacity=".7" fill="#FBF9FF">
+    <circle cx="84" cy="72" r="1.3"/>
+    <circle cx="142" cy="382" r="1"/>
+    <circle cx="240" cy="54" r="1"/>
+    <circle cx="764" cy="90" r="1.2"/>
+    <circle cx="823" cy="337" r="1"/>
+    <circle cx="729" cy="447" r="1.3"/>
+    <circle cx="112" cy="236" r=".8"/>
+    <circle cx="812" cy="190" r=".8"/>
+  </g>
+  <g opacity=".75" fill="#F3D36A">
+    <circle cx="190" cy="156" r="1.2"/>
+    <circle cx="758" cy="260" r="1"/>
+    <circle cx="664" cy="54" r=".9"/>
+  </g>
+
+  <text x="460" y="54" fill="#C6A6FF" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="3" text-anchor="middle">PROPOSTA DE IDENTIDADE • EDITORA</text>
+
+  <circle cx="460" cy="226" r="153" fill="#C6A6FF" opacity=".12" filter="url(#glow)"/>
+  <circle cx="460" cy="226" r="139" stroke="url(#violet)" stroke-width="1.5"/>
+  <circle cx="460" cy="226" r="128" stroke="#F3D36A" stroke-opacity=".72"/>
+  <circle cx="460" cy="226" r="115" stroke="#FBF9FF" stroke-opacity=".18" stroke-dasharray="1 7"/>
+
+  <path d="M460 91L471 112L494 105L487 128L508 139L486 149L492 172L469 164L460 185L451 164L428 172L434 149L412 139L433 128L426 105L449 112L460 91Z"
+        fill="url(#gold)" stroke="#FFF0A8" stroke-width="1"/>
+  <path d="M460 97V118M460 160V179M418 139H439M481 139H502" stroke="#FBF9FF" stroke-opacity=".75"/>
+
+  <path d="M387 209C387 191 401 177 419 177C439 177 449 194 460 211C471 228 481 245 501 245C519 245 533 231 533 213C533 195 519 181 501 181C481 181 471 198 460 215C449 232 439 249 419 249C401 249 387 235 387 217"
+        stroke="url(#gold)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M448 190L448 274" stroke="#FBF9FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M448 190H489M448 224H478" stroke="#FBF9FF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="460" cy="213" r="91" stroke="url(#violet)" stroke-opacity=".45"/>
+
+  <path d="M339 275C371 301 412 317 460 317C508 317 549 301 581 275" stroke="#F3D36A" stroke-opacity=".75"/>
+  <circle cx="339" cy="275" r="3" fill="#F3D36A"/>
+  <circle cx="581" cy="275" r="3" fill="#F3D36A"/>
+
+  <text x="460" y="372" fill="#FBF9FF" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="8" text-anchor="middle">INFINITY</text>
+  <text x="460" y="406" fill="#F3D36A" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="10" text-anchor="middle">FORGE</text>
+  <path d="M365 424H420M500 424H555" stroke="#C6A6FF" stroke-opacity=".68"/>
+  <path d="M456 421L460 417L464 421L460 425L456 421Z" fill="#F3D36A"/>
+
+  <text x="460" y="472" fill="#AFA9C1" font-family="Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2" text-anchor="middle">HISTÓRIAS FORJADAS ENTRE ESTRELAS</text>
+</svg>

@@ -1,0 +1,1679 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0917">
+    <meta
+      name="description"
+      content="Conheça um universo de heróis, escolhas impossíveis e histórias que ainda estão sendo escritas."
+    >
+    <title>Infinity Forge — histórias de João Muniz</title>
+    <link rel="icon" type="image/svg+xml" href="infinity-forge-icon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="inicio">
+      <a class="wordmark" href="#inicio" aria-label="Infinity Forge — início">
+        <img class="brand-logo" src="infinity-forge-logo.svg" alt="Infinity Forge">
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Abrir menu"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#livros">Os livros</a>
+        <a href="#universo">O universo</a>
+        <a href="#sobre-o-mundo">Sobre o mundo</a>
+        <a href="#curiosidades">Por trás das histórias</a>
+        <a class="nav-cta" href="#autor">Conheça o autor <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> UM UNIVERSO ORIGINAL DE JOÃO MUNIZ</p>
+          <h1 id="hero-title">Grandes poderes.<br><span>Escolhas humanas.</span></h1>
+          <p class="hero-description">
+            Heróis não nascem prontos. Eles surgem quando o mundo precisa — e
+            precisam decidir que mundo querem salvar.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#livros">Explore as histórias <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#universo">Descubra este universo <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-star" aria-hidden="true">✳</span>
+            <span>Uma saga em expansão.<br><strong>O próximo capítulo já está a caminho.</strong></span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Arte abstrata de um herói sob um céu cósmico">
+          <div class="hero-art-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-silhouette">
+            <span class="silhouette-head"></span>
+            <span class="silhouette-body"></span>
+            <span class="silhouette-cape"></span>
+          </div>
+          <span class="art-caption">TODA LENDA COMEÇA<br>COM UMA ESCOLHA.</span>
+          <span class="art-index">01 — 07</span>
+          <span class="art-crosshair" aria-hidden="true">+</span>
+        </div>
+
+        <a class="scroll-cue" href="#livros"><span></span> ROLE PARA DESCOBRIR</a>
+      </section>
+
+      <section class="books-section section-shell" id="livros" aria-labelledby="books-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> LEITURAS DO UNIVERSO</p>
+            <h2 id="books-title">Cada história abre<br><span>uma nova dimensão.</span></h2>
+          </div>
+          <p class="section-intro">
+            A porta de entrada para um universo compartilhado. Comece por aqui
+            ou siga as histórias na ordem que sua curiosidade mandar.
+          </p>
+        </div>
+
+        <div class="book-shelf">
+          <div class="book-tabs" role="tablist" aria-label="Organizar livros do universo">
+            <button class="book-tab" id="tab-lancamento" type="button" role="tab" aria-selected="true" aria-controls="shelf-lancamento" tabindex="0">Ordem de Lançamento</button>
+            <button class="book-tab" id="tab-fase-1" type="button" role="tab" aria-selected="false" aria-controls="shelf-fase-1" tabindex="-1">Fase 1</button>
+            <button class="book-tab" id="tab-fase-2" type="button" role="tab" aria-selected="false" aria-controls="shelf-fase-2" tabindex="-1">Fase 2</button>
+            <button class="book-tab" id="tab-fase-3" type="button" role="tab" aria-selected="false" aria-controls="shelf-fase-3" tabindex="-1">Fase 3</button>
+            <button class="book-tab" id="tab-curtas" type="button" role="tab" aria-selected="false" aria-controls="shelf-curtas" tabindex="-1">Curtas</button>
+            <button class="book-tab" id="tab-cronologica" type="button" role="tab" aria-selected="false" aria-controls="shelf-cronologica" tabindex="-1">Ordem Cronológica</button>
+            <button class="book-tab" id="tab-universos-paralelos" type="button" role="tab" aria-selected="false" aria-controls="shelf-universos-paralelos" tabindex="-1">Universos Paralelos</button>
+          </div>
+
+          <section class="book-shelf-panel" id="shelf-lancamento" role="tabpanel" aria-labelledby="tab-lancamento" tabindex="0">
+            <div class="shelf-toolbar">
+              <p>Todos os livros, na sequência em que chegam até você.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver livros anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximos livros">→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-lancamento" role="region" aria-label="Livros em ordem de lançamento">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-capa.png" alt="Capa do livro O Extraordinário, Livro 1, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 01 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário</h3>
+                  <p class="book-summary">Após um acidente fatal, Ethan Stevens Miles ganha uma semana de vida — e descobre que o mundo é mais estranho do que imaginava.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-summary-release" hidden>Ethan Stevens Miles é um jovem comum, residente da cidade de Pilgrim, e geralmente esquecido pelas pessoas. Sua vida está para mudar completamente após um acidente, que o deixa entre a vida e a morte. Tendo apenas uma semana de vida restante, algo supremo acontece, e ele se dá conta de que o mundo é mais estranho do que parece.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Fragmentada</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/story/3626181120-o-extraordin%C3%A1rio?" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-capa.png" alt="Capa do livro Fragmentada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 02 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada</h3>
+                  <p class="book-summary">Após descobrir poderes ligados à sua linhagem, Evelline precisa enfrentar um grupo secreto em Pilgrim e o despertar de um lado perigoso de si mesma.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-summary-release" hidden>Após os eventos de "O Extraordinário", Evelline tenta tocar sua vida normalmente, mas ela descobre que seus antepassados ainda têm coisas a revelar.<br><br>Redescobrindo um poder adormecido vindo de sua antiga linhagem, Evelline é guiada por sua avó Margareth a descobrir que também tem super habilidades. Evelline terá que lidar com um grupo secreto que vive nas sombras de Pilgrim chamado "Os Salvadores".<br><br>Tentando acabar com uma guerra oculta e muito antiga, Evelline terá que lutar contra alguém que um dia chamou de amiga, ao mesmo tempo que desperta um lado seu bastante cruel e perigoso: a Fragmentada.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>O Extraordinário</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0B5NM3WST/ref=sr_1_11?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2XXPXB162UO7&amp;dib=eyJ2IjoiMSJ9.a_p-1xdbHuNTVVUftGPcvCzMcHd90mXeI6hk6_LawF6ZgYtfzYrVN9hiki_74iwYyYWW4BlVEbZnrSS5ITSqOisBDfsKPwR63v7wV5vD9_M6-ESnMGkXGCWeQzfdKyW5EFEr72Ytx78UxzclRdWu4LAPeBCB_zDMNVSnarTha26xgVP8ER9dEMM9pEivLxE6F_xeQUd7l68qV6utoysIpDv08aHotHh6gDR6Vj3M-Dg.ky6ylRGlJtEVgW2lrxDhi14wdc_sXH2lGCQLZFmLVFk&amp;dib_tag=se&amp;keywords=Fragmentada&amp;qid=1791069673&amp;s=digital-text&amp;sprefix=fragmentad%2Cdigital-text%2C210&amp;sr=1-11" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-capa.png" alt="Capa do livro Muralha de Titânio, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 03 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio</h3>
+                  <p class="book-summary">O lutador Jack Piwbrins precisa enfrentar uma ameaça que coloca sua família em risco e descobrir a ligação entre sua força e o nome Armstrong.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-summary-release" hidden>Jack Piwbrins é o melhor e mais famoso lutador do mundo inteiro, conhecido por sua força sobre-humana e seu poder descomunal. Quando sua vida e a de todos os seus parentes correm risco, ele se vê obrigado a encarar uma ameaça estranha — e está prestes a descobrir que toda a sua força tem total envolvimento com um nome: "Armstrong".</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Fragmentada</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1055597312-muralha-de-tit%C3%A2nio" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-capa.png" alt="Capa do livro O Anarquista, volume 1: A Justiça Não Dorme, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 04 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">A Justiça Não Dorme</p>
+                  <p class="book-summary">Quando as corporações dominam e a Austrália está à beira do colapso, James Pendleton retorna para enfrentar os tiranos — e as revelações de seu próprio passado.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-summary-release" hidden>Em um mundo onde o poder governamental é quase diminuto e as corporações dominam, uma lenda surge para punir todos aqueles que são corruptos e desonestos.<br><br>James Pendleton se vê obrigado a voltar a sua terra quando ela está à beira de um iminente colapso. Sem muitas respostas do seu passado, ele vai atrás dos tiranos que causaram todo o caos na Austrália, porém mesmo ele não estando sozinho, terá de encarar perdas e situações muito difíceis pra justiça prevalecer, mas será que James será capaz de lidar com as fortes revelações que se aproximam?</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Anarquista</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4091683584-o-anarquista-vol-1--a-justi%C3%A7a-n%C3%A3o-dorme" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-capa.png" alt="Capa do livro Os Alongs: Invasão Macabra, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 05 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Invasão Macabra</p>
+                  <p class="book-summary">Ethan, Evelline e Jack se unem para enfrentar o lendário Fusion e impedir que criaturas de outro lugar invadam a Terra por um portal rosa.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-alongs-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="os-alongs-summary-release" hidden>Ethan, Evelline e Jack são o trio de heróis mais poderosos da terra, eles deverão se unir para resolver casos de desaparecimentos inexplicáveis e dar fim a uma guerra silenciosa que já dura milênios contra uma ameaça superior. Eles também poderão contar com o apoio de um quarto integrante na equipe.<br><br>Reunidos para enfrentar o legendário vilão Fusion, os Alongs têm a difícil missão de evitar um apocalipse iminente quando um portal rosa é aberto e criaturas de outro lugar começam a invadir a Terra.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Invas%C3%A3o-Universo-Liter%C3%A1rio-ebook/dp/B0B5PR667X/ref=sr_1_16?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2ESOAINAF7B6B&amp;dib=eyJ2IjoiMSJ9.pLkhqO8nYhBEooV8vWgopNT2rwi-5U7YD3-kTJ6NgD-akhrINzPFbDOBW4jONcWyxGr_M4076WLWsg_TkTpyVeA2wdvi7I4tgZoTEXOMDcNR-vPyEgE-SwVnysF6BEEGMv0q829shOW2yygzkPqwlHNVVN0CwwGEPxt0W3p6cr_XLLFyEvl_fK_PkFEit7wpV4oWnVcl9FF6K_3d6Hrwz0aPjcOPTi15f627AhJKThA.YMhaYFm755yKcf7qAI9K_Zwwvmt54g-DIOvp9UKiFfM&amp;dib_tag=se&amp;keywords=Os+Alongs&amp;qid=1791071255&amp;s=digital-text&amp;sprefix=os+alongs%2Cdigital-text%2C202&amp;sr=1-16" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-2-capa.png" alt="Capa do livro O Extraordinário 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 06 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário 2</h3>
+                  <p class="book-summary">Em seu momento mais difícil, Ethan precisa enfrentar seu inimigo mais mortal: ele próprio — e salvar a todos de uma ameaça iminente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-2-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-2-summary-release" hidden>Ethan Miles, um jovem comum com poderes sobrenaturais, terá que agora lidar com o seu pior e mais mortal inimigo: ele próprio.<br><br>Ethan está no maior momento de decadência de sua vida, agora sozinho, depressivo e sem esperança, ele precisa se salvar e salvar a todos de uma ameaça iminente. Porém, poderá contar com o apoio de um velho amigo, James Pendleton.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4187497216-o-extraordin%C3%A1rio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-2-capa.png" alt="Capa do livro Fragmentada 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 07 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada 2</h3>
+                  <p class="book-summary">Capitã respeitada, Evelline usa sua influência para ajudar os mais necessitados, mas um pressentimento a leva a investigar o grupo terrorista Osíris.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-2-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-2-summary-release" hidden>Atualmente sendo uma Capitã do exército americano super conceituada e respeitada, Evelline consegue tocar sua vida pra frente após finalmente resolver todos os seus dilemas internos e externos, e decide usar sua influência para ajudar instituições de caridade e criar pautas para beneficiar os mais necessitados. Porém ela tem o pressentimento de que ainda há alguma coisa que ela deve investigar, e se prepara para ter revelações e lutar contra um grupo de terroristas chamado Osíris.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/3818398464-fragmentada-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-2-capa.png" alt="Capa do livro Muralha de Titânio 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 08 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio 2</h3>
+                  <p class="book-summary">Após deixar os ringues, Jack tenta reparar os danos do passado e proteger quem ama de uma ameaça poderosa, aprendendo que força bruta não será suficiente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-2-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-2-summary-release" hidden>Depois de ser obrigado a se aposentar da sua brilhante carreira de lutador profissional, Jack se torna um administrador irreverente da maior rede de esportes e atletas do mundo, a qual ele mesmo fundou.<br><br>Dois anos após a luta com seu pai, Willard, Jack se vê atormentado pelo assassinato de Henry Bowers, que acabou cometendo em um momento de descontrole e loucura. E, procurando compensar o mal que causou, ele se dedica a ajudar instituições de caridade com tudo o que ganha, porém Hillary Duff faz uma proposta que pode realmente fazer a diferença e revolucionar a humanidade.<br><br>Entretanto, uma ameaça maior começa a caçá-los, com poder e força o suficiente para vencer qualquer um e a promessa de matar todos aqueles que Jack ama. Será que o Muralha de Titanium será páreo? Para ter alguma chance, Jack aprenderá que será necessário mais do que uma força bruta absurda para proteger aqueles que ama.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1100555008-muralha-de-tit%C3%A2nio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/sicario-sombrio-temporada-1-capa.png" alt="Capa de Sicário Sombrio, 1ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 09 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Sicário Sombrio</h3>
+                  <p class="book-subtitle">1ª Temporada</p>
+                  <p class="book-summary">Recrutado à força ainda criança, Peter Hood conquista a liberdade e assume a identidade de Sicário Sombrio ao investigar uma tentativa de assassinato.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="sicario-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="sicario-summary-release" hidden>Com o enfraquecimento da corporação Australiana, Peter Hood finalmente tem enfim uma chance de liberdade após ter sido recrutado contra a sua vontade quando era criança e ainda morava em Pilgrim.<br><br>Peter passa pelo programa de super agentes, é treinado e desenvolve super habilidades. Agora tentando compreender quem se tornou, ao mesmo tempo em que usa todas as suas habilidades, inclusive seu talento de jamais errar o alvo, para ajudar as pessoas, Hood dá de cara com uma tentativa de assassinato inesperada, com Tarik Niazi como mandante. Sem entender o porquê de Tarik querer matá-lo, Peter parte para Istambul e assume a identidade de Sicário Sombrio, mas logo descobre que esse nome tem um peso muito grande e precede coisas muito brutais.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>O Extraordinário</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/530195200-sic%C3%A1rio-sombrio---1%C2%B0-temporada" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/as-amazonas-capa.png" alt="Capa do livro As Amazonas, de João Batista e Caroline Almeida">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 10 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>As Amazonas</h3>
+                  <p class="book-summary">As deusas amazonas Hipólita e Pentesileia vão ao Tártaro para enfrentar mudanças na realidade que ameaçam o Olimpo e o universo.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amazonas-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amazonas-summary-release" hidden>Filhas de Ares, o deus da Guerra, e Otrera, Rainha das Amazonas, Hipólita e Pentesileia são duas deusas amazonas irmãs.<br><br>O Tártaro recebe a visita das duas deusas quando mudanças drásticas de realidade passam a acontecer e o destino do Olimpo e do universo corre perigo. As duas devem trabalhar juntas para impedir que a aniquilação venha sobre todas, mas Hipólita tem dúvidas a respeito de si própria e de sua vida.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Mitologia grega</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/As-Amazonas-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B654CRW8/ref=sr_1_12?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=29ZAD31WJP9TL&amp;dib=eyJ2IjoiMSJ9.3e2VaaJyIv5BYY6nhlkbEIUgoABPIlaPey_UnMsLxhHbgbsfXgBC8N1vk7TZiVkTu2PxGrTMotDWxtjIjd-uAC4WDYMVBnRw9zJiiYLqATuI1aRHX-LcaRnQHRGk5R5iihquYo-zCtlPxS8-0i0kpZHT7NmmDr4oZAFoXKduAqNcw5TH1L-_-V5zBvimLE06tzsbNjcqr1BjAzzw6WfJrfJlxkSXV2mvo0360JaOvVU.4beGayuwr4tH-igNe3D4WIxQ4QzE6Ry3JP5YOxwbh7g&amp;dib_tag=se&amp;keywords=As+Amazonas&amp;qid=1791072676&amp;s=digital-text&amp;sprefix=as+amazona%2Cdigital-text%2C204&amp;sr=1-12" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/interestelar-temporada-1-capa.png" alt="Capa de Interestelar, 1ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 11 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Interestelar</h3>
+                  <p class="book-subtitle">1ª Temporada</p>
+                  <p class="book-summary">Ao descobrir que é uma alienígena, a neurocirurgiã Mary Kimberly Watson assume o papel de heroína de Pilgrim e enfrenta uma ameaça familiar.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="interestelar-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="interestelar-summary-release" hidden>Mary Kimberly Watson, uma neurocirurgiã muito experiente e dedicada ao seu trabalho e à sua vida, descobre de repente que é uma alienígena.<br><br>Mary está na busca de entender mais sobre si mesma enquanto assume o papel de heroína de Pilgrim deixado pelo Extraordinário. Com a ajuda de Thomas e Brandon, ela se dedica a descobrir quem é de verdade, ao mesmo tempo que salva a cidade de uma ameaça um tanto... "familiar".</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Interestelar</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>O Extraordinário</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Interestelar-Temporada-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B67CFGQR/ref=sr_1_10?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-10&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-ato-final-capa.png" alt="Capa de O Anarquista: O Ato Final, volume 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 12 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">O Ato Final</p>
+                  <p class="book-summary">Três anos após o atentado russo, James Pendleton e a SPOP partem para um acerto de contas definitivo — a última missão do Anarquista.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-final-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-final-summary-release" hidden>Três anos após o atentado russo para tomar a Austrália à força, o Anarquista e a SPOP enfim chegam à Rússia para um acerto de contas definitivo. O Anarquista ainda lida com as dificuldades de ter sua cabeça a prêmio, e Abagor Kosarev está disposto a fazer de tudo para tornar tudo muito mais difícil.<br><br>Com a mente inundada por lembranças de seus pais, seu passado e sua missão, James Pendleton toma uma decisão derradeira: o Anarquista tem uma última e decisiva missão a cumprir antes de pendurar a máscara.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Anarquista</li>
+                    <li>Ação</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Anarquista-Ato-Final-Universo-Liter%C3%A1rio-ebook/dp/B0BFNYH9NS/ref=sr_1_4?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-4&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/zatspiders-de-orion-capa.png" alt="Capa do livro Zatspiders de Orion, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 13 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Zatspiders de Orion</h3>
+                  <p class="book-summary">Cinco aliados improváveis enfrentam um império intergaláctico e uma arma capaz de dominar civilizações e mudar a realidade.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="zatspiders-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="zatspiders-summary-release" hidden>Inicialmente juntos por interesses próprios, mas depois unidos por um mal em comum, Morjhan, Brixell, Acirrilex, Taud e Zhor se encontram numa verdadeira prova de fogo: sozinhos, terão que dar conta de um império intergaláctico inteiro e de sua arma mais mortal, capaz de dominar civilizações inteiras e mudar o rumo de toda a realidade.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Zatspiders de Orion</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Zatspiders-Orion-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0C1CV1NPR/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=23YD6O1OBGZPR&amp;dib=eyJ2IjoiMSJ9.4qFWhEoXjDGXj7gKPaAN4Q._4fUQqDvZmU0o5o25Ysc2s6s8fQPdH4EaoLUBHqVLZg&amp;dib_tag=se&amp;keywords=zatspiders+de+orion&amp;qid=1791073594&amp;s=digital-text&amp;sprefix=zatspiders+de+orion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-oblivion-capa.png" alt="Capa de Os Alongs: Oblivion, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 14 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Oblivion</p>
+                <p class="book-summary">Após um artefato trazer um alerta ao Berço dos Heróis, os Alongs e seus aliados enfrentam Oblivion e as profecias sobre uma ameaça mortal e atemporal.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-oblivion-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="alongs-oblivion-summary-release" hidden>A maior equipe de super-heróis do planeta se reúne novamente para encarar uma ameaça mortal e atemporal. Os Alongs e o time Bravo se reúnem com o presidente e várias outras personalidades importantes da política para prestigiar a conclusão e o lançamento do Projeto Satélite Sentinela. Mas tudo vira do avesso quando um corpo metálico desconhecido atinge o Berço dos Heróis, trazendo uma mensagem de perigo iminente.<br><br>Os Alongs terão que enfrentar a grande ameaça e lidar com as profecias que ela traz, com a ajuda de um grupo bem semelhante ao deles, os Vigilantes, liderados pela Baronesa Vermelha, e também com a aparição inesperada de duas irmãs deusas amazonas que estão caçando essa mesma entidade chamada Oblivion.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                <li>O Extraordinário</li>
+                <li>Fragmentada</li>
+                <li>Muralha de Titânio</li>
+                <li>Sicário Sombrio</li>
+                <li>Ação</li>
+                  <li>Sombra</li>
+                  <li>As Amazonas</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Oblivion-Universo-Liter%C3%A1rio-ebook/dp/B0C1DKWQS7/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IVUNLEJWFOI5&amp;dib=eyJ2IjoiMSJ9.oJUz3Yw2Xoy140OEkMeh8hmrGbmnV9aSxaTgOEEkfWLGjHj071QN20LucGBJIEps.pX20-aA-IosQ-fXSZB4VdZtZODgQKFGnI8XDY1BtG1A&amp;dib_tag=se&amp;keywords=Os+alongs+oblivion&amp;qid=1791073756&amp;s=digital-text&amp;sprefix=os+alongs+oblivion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-perdidos-na-terra-12-capa.png" alt="Capa de Os Alongs: Perdidos na Terra 12, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 15 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Perdidos na Terra 12</p>
+                <p class="book-summary">Uma anomalia leva os Alongs a uma realidade paralela, onde se unem aos Invencíveis para enfrentar o Viajante e encontrar o caminho de volta.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-terra-12-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="alongs-terra-12-summary-release" hidden>Ajudando a CIRCE a investigar uma anomalia no Deserto da Arábia, os Alongs acabam se envolvendo em um conflito de proporções imprevisíveis, que os leva a uma realidade paralela, onde encontrarão um novo mundo com uma realidade bem diferente.<br><br>Para encontrar e combater o vilão Viajante, os Alongs deverão se unir aos Invencíveis, os heróis da Terra 12, porém todos os membros têm o gênero invertido. Sob um clima de mistério, tensão e curiosidade, as duas equipes deverão encontrar uma forma de reverter a situação e, no meio do caminho, perceberão que nem tudo é o que parece.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                <li>O Extraordinário</li>
+                <li>Fragmentada</li>
+                <li>Muralha de Titânio</li>
+                <li>Sicário Sombrio</li>
+                <li>Ação</li>
+                <li>Drama</li>
+                  <li>Sombra</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Perdidos-Universo-Liter%C3%A1rio-ebook/dp/B0CFJY8SJS/ref=sr_1_6?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-6&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/nikita-capa.png" alt="Capa do livro Nikita, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 16 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Nikita</h3>
+                <p class="book-summary">Após uma explosão comprometer sua audição e tirar a vida de seus pais, Hikari precisa escolher entre uma vida normal e o caminho da vingança como Nikita.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="nikita-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="nikita-summary-release" hidden>Com sua audição comprometida por conta da mesma explosão que matou seus pais quando tinha apenas três anos, Hikari Yingtai dá tudo de si todos os dias para sobreviver. Até que, por um ato de culpa, a vida de Hikari está para dar outra reviravolta, e ela se vê diante da escolha de seguir uma vida minimamente normal ou trilhar o caminho da vingança, assumindo o codinome de assassina e mercenária Nikita, a deusa da morte.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Nikita</li>
+                  <li>Ação</li>
+                  <li>Fragmentada</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Nikita-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0CFK28P16/ref=sr_1_9?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-9&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/fragmentada-3-desmembrados-capa.png" alt="Capa de Fragmentada 3: Desmembrados, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 17 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Fragmentada 3</h3>
+                <p class="book-subtitle">Desmembrados</p>
+                <p class="book-summary">Líder dos Alongs, a Capitã Armstrong precisa escolher entre manter a equipe unida ou impedir uma catástrofe que pode provocar uma terceira guerra mundial.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-3-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="fragmentada-3-summary-release" hidden>Trilhando seu caminho de líder, Evelline tem de enfrentar um problema global que ameaça os tempos de paz e provoca uma terceira guerra mundial.<br><br>Com o Congresso Americano e as Nações Unidas fazendo pressão, a Capitã Armstrong terá que escolher entre manter os Alongs unidos ou evitar uma catástrofe nunca antes vista na história da humanidade.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                  <li>O Extraordinário</li>
+                  <li>Muralha de Titânio</li>
+                  <li>Sicário Sombrio</li>
+                  <li>Fragmentada</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                  <li>Emily Karzark</li>
+                  <li>Sombra</li>
+                  <li>As Amazonas</li>
+                  <li>Espectro</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Desmembrados-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0CR9KHHJ3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-5&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/senhor-celeste-capa.png" alt="Capa do livro Senhor Celeste, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 18 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Senhor Celeste</h3>
+                <p class="book-summary">Ao estudar o cadáver de um alienígena da Invasão Macabra, o arqueólogo Jonah Celeste se depara com um mundo inimaginável — e com o planeta paralisado no tempo.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="senhor-celeste-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="senhor-celeste-summary-release" hidden>O arqueólogo britânico mais famoso do mundo, Jonah Moriarty Celeste, é incumbido de estudar o cadáver de um dos alienígenas invasores da famosa Invasão Macabra. Já tendo a carreira mais impecável do mundo, o orgulhoso Doutor Celeste se compromete com mais essa empreitada a fim de consagrar esse como sendo o trabalho de sua vida. Porém, esses estudos o levarão a um mundo inimaginável, onde Jonah encontrará coisas muito além da realidade, mas tudo fica pior quando, de repente, todo o planeta fica parado no tempo.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Senhor Celeste</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Senhor-Celeste-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DFV3P8SH/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3NOCMF00S2EWI&amp;dib=eyJ2IjoiMSJ9.lgaN_hfHudM7rE5LoYSAjHTajuf_4Kha3nqPK1f2DhVBfNMKn-HC9plLYRhXsYWwz_qktprs5SHVJZXOQu4Ig0EFIbvAkn2qcsdRg8swGS__Z4EX0Jh90UM7vCfjwOpRMSc5yIyfQSeys-hvcSuURVBilwr3eYCxHU5FsPXJ7heSbcPrzcWva4NLCMZzclxQbB4xNIl7hChG1eeGivh5y62yXBTkPKT8kjZ6VvsSsdc.5rb6qSBKktZTwgFsWj-3DW2fBjaDswUOgXMZliDDxWs&amp;dib_tag=se&amp;keywords=senhor+celeste&amp;qid=1791074494&amp;s=digital-text&amp;sprefix=senhor+celeste%2Cdigital-text%2C192&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/os-soberanos-capa.png" alt="Capa do livro Os Soberanos, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 19 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Soberanos</h3>
+                <p class="book-summary">Em Kimera, o retorno do bruxo banido Maddock ameaça o reino, enquanto a princesa Emily precisa decidir se fará o sacrifício exigido pelo Violantis.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-soberanos-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="os-soberanos-summary-release" hidden>Em Kimera, uma nação oculta de magos e feiticeiros, o Rei Alfred Karzark enfrenta dias sombrios após uma negociação falha. A relação com aliados se fragiliza, e radicais defendem dominação sobre o mundo.<br><br>Um antigo bruxo banido, Maddock, retorna, buscando vingança. O Rei mobiliza forças mágicas para impedi-lo. A princesa Emily Karzark enfrenta um dilema: sacrificar tudo como Mestra do Violantis?</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Emily Karzark</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Soberanos-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DR78YYY5/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=I74LGAJCIH41&amp;dib=eyJ2IjoiMSJ9.f-WeOjo4Z134NkBbMEW9UeMNVhohkIKMZ8DEWrBko4P3uq3gytBmkV3UKnNL7bZdQHa7rJxeuruhu3GawwCBK6ppDlaEA2GMOi38Yn4L_PqeslHAbgmn54hw3QvocY2uf8ei38lChd4V0Ui16gJkxFxAAsIjYLv9xSWf54TMGVGf6lGGgTlJgLY7HvjbsTJcDd9KCxt8EWbjbFRuvWUgGeBefd2LUjPk40exThe5Pes.SX91ugdme6Q5eb3xVo1b2pTCwd1lBI_yzoCP5wG-fPs&amp;dib_tag=se&amp;keywords=Os+Soberanos&amp;qid=1791074724&amp;s=digital-text&amp;sprefix=os+soberano%2Cdigital-text%2C193&amp;sr=1-4" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/as-amazonas-amazonomaquia-capa.png" alt="Capa de As Amazonas: Amazonomaquia, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 20 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                <h3>As Amazonas</h3>
+                <p class="book-subtitle">Amazonomaquia</p>
+                <p class="book-summary">Hércules marcha sobre Temiscira, enquanto Pentesileia e Hipólita enfrentam ameaças que podem destruir seu povo, o Panteão e o Olimpo.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amazonomaquia-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="amazonomaquia-summary-release" hidden>Um guerreiro praticamente imbatível avança em direção à Temiscira; com uma força divina, ele atropela as maiores guerreiras. As guerreiras Amazonas sofrem com uma pressão nunca vista antes em combate, e Pentesileia reage como guerreira e rainha para defender seu povo, mas é testada ao usar toda a sua força divina para parar o semideus Hércules, que busca o cinturão de Hipólita a todo custo.<br><br>Paralelamente a isso, o Panteão do deus da Guerra sofre com uma ameaça cósmica tão terrível que todo o Olimpo fica em alerta, e Ares se vê diante de uma escolha difícil e improvável.<br><br>Hipólita sofre as consequências por ter quebrado umas das principais leis impostas por Zeus, mas com o futuro de Temiscira, do Panteão e de Misó ameaçados, as duas irmãs unem forças novamente para impedir a destruição do próprio povo quando um ataque organizado entre Atenas, Micenas e Esparta vem sobre Temiscira. Mas essa relação de fraternidade entre as filhas de Ares e Otrera passa por seu momento derradeiro quando Hipólita encara uma realidade oculta, colocando em jogo o futuro de todo um povo.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>As Amazonas</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/interestelar-temporada-2-capa.png" alt="Capa de Interestelar, 2ª Temporada, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 21 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                <h3>Interestelar</h3>
+                <p class="book-subtitle">2ª Temporada</p>
+                <p class="book-summary">Após chegar a Gar e ser acolhida por seu povo, Mary precisa decidir se ficará em seu planeta natal ou cumprirá a promessa feita a Thomas, enquanto uma verdade perturbadora vem à tona.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="interestelar-2-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="interestelar-2-summary-release" hidden>Após completar a viagem de três anos-luz rumo ao seu planeta natal, Gar, Mary é saudada pelo seu povo de nascença, os Gareanos.<br><br>Recebida entre os seus semelhantes da raça, ela é acolhida como filha de Gare, o Maior. Apesar de toda a celebração por sua chegada e autodescoberta como Gareana, Mary não consegue aceitar ficar em Gar por causa da promessa feita a Thomas, e isso inicia uma série de problemas e revela uma verdade perturbadora sobre o motivo de Gar querer Mary de volta à civilização Gareana.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Interestelar</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/espectro-capa.png" alt="Capa do livro Espectro, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 22 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                <h3>Espectro</h3>
+                <p class="book-summary">De volta à Ucrânia, Anton Koslov tenta se adaptar à vida de cidadão comum e super-herói, enquanto antigos fantasmas de Pripyat voltam a assombrar a cidade.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="espectro-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="espectro-summary-release" hidden>Novo em um novo mundo, Anton Koslov busca se adaptar à vida normal de um cidadão comum enquanto secretamente também tenta se adaptar à vida de um super-herói. Depois da deportação de volta à Ucrânia, a família de Anton se encaixa no programa de reestruturação da “Nova Pripyat”. Ao mesmo tempo que Anton conhece a nova faceta da cidade, também descobre antigos fantasmas que todos acreditaram terem sido esquecidos no dia 26 de abril de 1986.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Espectro</li>
+                  <li>Ação</li>
+                  <li>Comédia</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/o-extraordinario-3-capa.png" alt="Capa do livro O Extraordinário 3, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                <h3>O Extraordinário 3</h3>
+                <p class="book-summary">Após reconstruir sua vida em Indaiá, Ethan enfrenta o legado de seu pai, cujos erros de décadas atrás ameaçam destruir tudo o que conquistou e todos que ama.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-3-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="extraordinario-3-summary-release" hidden>Ethan recomeça sua vida praticamente do zero depois de se recuperar de ferimentos profundos que quase o levaram à morte. Dessa vez, aproveitando a oportunidade de construir uma nova vida como pessoa e como super-herói, ele cria o estilo de vida perfeito e se torna o homem mais bem-sucedido de Indaiá. Feliz e casado, Ethan Miles alcança um patamar de vida que jamais pensou ser possível.<br><br>Mas ele leva um choque de realidade quando mais coisas sobre o passado de seu pai, Henry Stevens, começam a vir à tona. Os erros de seu pai, cometidos há quatro décadas, retornam para ameaçar o presente e destruir a vida perfeita de Ethan e de todos aqueles que ele ama.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>O Extraordinário</li>
+                  <li>Ação</li>
+                  <li>Romance</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/sicario-sombrio-temporada-2-capa.png" alt="Capa de Sicário Sombrio, 2ª Temporada, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                <h3>Sicário Sombrio</h3>
+                <p class="book-subtitle">2ª Temporada</p>
+                <p class="book-summary">Após três anos de investigação, Peter Hood segue a trilha de um serial killer até Whitechapel, onde assassinatos semelhantes aos de 1888 voltam a aterrorizar Londres.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="sicario-sombrio-2-summary-release">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="sicario-sombrio-2-summary-release" hidden>Após três anos de investigação concentrada desde que Peter Hood desertou dos Alongs, o último rastro fresco do temido assassino Sicário Sombrio esfriou em Londres, Reino Unido. A trilha de sangue apavorante deixada pelo serial killer leva Peter até Whitechapel, onde assassinatos similares aos de 1888 começam a aflorar os nervos da cidade outra vez, levando Londres a um toque de recolher e a uma investigação frenética.<br><br>Peter Hood enfrenta enigmas e charadas capazes de ameaçar até a família real, e sua busca constante pelo serial killer o leva a descobertas arrepiantes e perdas dolorosas. Mas Peter encara o maior desafio de sua vida ao descobrir o pior segredo, que põe sua vida em risco.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Sicário Sombrio</li>
+                  <li>Ação</li>
+                  <li>Romance</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-alfa-reset-capa.png" alt="Capa de Os Alongs: Alfa Reset, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Alfa Reset</p>
+                <p class="book-summary">Sinopse em breve.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                                    <li>O Extraordinário</li>
+                  <li>Fragmentada</li>
+                  <li>Muralha de Titânio</li>
+                  <li>Ação</li>
+                </ul>
+              </div>
+            </article>
+            <article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-omega-finis-capa.png" alt="Capa de Os Alongs: Omega Finis, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Omega Finis</p>
+                <p class="book-summary">Sinopse em breve.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Sicário Sombrio</li>
+                  <li>O Extraordinário</li>
+                  <li>Fragmentada</li>
+                  <li>Muralha de Titânio</li>
+                  <li>Ação</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="book-shelf-panel" id="shelf-fase-1" role="tabpanel" aria-labelledby="tab-fase-1" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>As histórias que dão início a esta fase do universo.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver livros anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximos livros" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-fase-1" role="region" aria-label="Livros da Fase 1">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-capa.png" alt="Capa do livro O Extraordinário, Livro 1, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 01 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário</h3>
+                  <p class="book-summary">Após um acidente fatal, Ethan Stevens Miles ganha uma semana de vida — e descobre que o mundo é mais estranho do que imaginava.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-summary-phase" hidden>Ethan Stevens Miles é um jovem comum, residente da cidade de Pilgrim, e geralmente esquecido pelas pessoas. Sua vida está para mudar completamente após um acidente, que o deixa entre a vida e a morte. Tendo apenas uma semana de vida restante, algo supremo acontece, e ele se dá conta de que o mundo é mais estranho do que parece.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Fragmentada</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/story/3626181120-o-extraordin%C3%A1rio?" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-capa.png" alt="Capa do livro Fragmentada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 02 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada</h3>
+                  <p class="book-summary">Após descobrir poderes ligados à sua linhagem, Evelline precisa enfrentar um grupo secreto em Pilgrim e o despertar de um lado perigoso de si mesma.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-summary-phase" hidden>Após os eventos de "O Extraordinário", Evelline tenta tocar sua vida normalmente, mas ela descobre que seus antepassados ainda têm coisas a revelar.<br><br>Redescobrindo um poder adormecido vindo de sua antiga linhagem, Evelline é guiada por sua avó Margareth a descobrir que também tem super habilidades. Evelline terá que lidar com um grupo secreto que vive nas sombras de Pilgrim chamado "Os Salvadores".<br><br>Tentando acabar com uma guerra oculta e muito antiga, Evelline terá que lutar contra alguém que um dia chamou de amiga, ao mesmo tempo que desperta um lado seu bastante cruel e perigoso: a Fragmentada.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>O Extraordinário</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0B5NM3WST/ref=sr_1_11?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2XXPXB162UO7&amp;dib=eyJ2IjoiMSJ9.a_p-1xdbHuNTVVUftGPcvCzMcHd90mXeI6hk6_LawF6ZgYtfzYrVN9hiki_74iwYyYWW4BlVEbZnrSS5ITSqOisBDfsKPwR63v7wV5vD9_M6-ESnMGkXGCWeQzfdKyW5EFEr72Ytx78UxzclRdWu4LAPeBCB_zDMNVSnarTha26xgVP8ER9dEMM9pEivLxE6F_xeQUd7l68qV6utoysIpDv08aHotHh6gDR6Vj3M-Dg.ky6ylRGlJtEVgW2lrxDhi14wdc_sXH2lGCQLZFmLVFk&amp;dib_tag=se&amp;keywords=Fragmentada&amp;qid=1791069673&amp;s=digital-text&amp;sprefix=fragmentad%2Cdigital-text%2C210&amp;sr=1-11" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-capa.png" alt="Capa do livro Muralha de Titânio, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 03 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio</h3>
+                  <p class="book-summary">O lutador Jack Piwbrins precisa enfrentar uma ameaça que coloca sua família em risco e descobrir a ligação entre sua força e o nome Armstrong.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-summary-phase" hidden>Jack Piwbrins é o melhor e mais famoso lutador do mundo inteiro, conhecido por sua força sobre-humana e seu poder descomunal. Quando sua vida e a de todos os seus parentes correm risco, ele se vê obrigado a encarar uma ameaça estranha — e está prestes a descobrir que toda a sua força tem total envolvimento com um nome: "Armstrong".</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Fragmentada</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1055597312-muralha-de-tit%C3%A2nio" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-capa.png" alt="Capa do livro O Anarquista, volume 1: A Justiça Não Dorme, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 04 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">A Justiça Não Dorme</p>
+                  <p class="book-summary">Quando as corporações dominam e a Austrália está à beira do colapso, James Pendleton retorna para enfrentar os tiranos — e as revelações de seu próprio passado.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-summary-phase" hidden>Em um mundo onde o poder governamental é quase diminuto e as corporações dominam, uma lenda surge para punir todos aqueles que são corruptos e desonestos.<br><br>James Pendleton se vê obrigado a voltar a sua terra quando ela está à beira de um iminente colapso. Sem muitas respostas do seu passado, ele vai atrás dos tiranos que causaram todo o caos na Austrália, porém mesmo ele não estando sozinho, terá de encarar perdas e situações muito difíceis pra justiça prevalecer, mas será que James será capaz de lidar com as fortes revelações que se aproximam?</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Anarquista</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4091683584-o-anarquista-vol-1--a-justi%C3%A7a-n%C3%A3o-dorme" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-capa.png" alt="Capa do livro Os Alongs: Invasão Macabra, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 05 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Invasão Macabra</p>
+                  <p class="book-summary">Ethan, Evelline e Jack se unem para enfrentar o lendário Fusion e impedir que criaturas de outro lugar invadam a Terra por um portal rosa.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-alongs-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="os-alongs-summary-phase" hidden>Ethan, Evelline e Jack são o trio de heróis mais poderosos da terra, eles deverão se unir para resolver casos de desaparecimentos inexplicáveis e dar fim a uma guerra silenciosa que já dura milênios contra uma ameaça superior. Eles também poderão contar com o apoio de um quarto integrante na equipe.<br><br>Reunidos para enfrentar o legendário vilão Fusion, os Alongs têm a difícil missão de evitar um apocalipse iminente quando um portal rosa é aberto e criaturas de outro lugar começam a invadir a Terra.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Invas%C3%A3o-Universo-Liter%C3%A1rio-ebook/dp/B0B5PR667X/ref=sr_1_16?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2ESOAINAF7B6B&amp;dib=eyJ2IjoiMSJ9.pLkhqO8nYhBEooV8vWgopNT2rwi-5U7YD3-kTJ6NgD-akhrINzPFbDOBW4jONcWyxGr_M4076WLWsg_TkTpyVeA2wdvi7I4tgZoTEXOMDcNR-vPyEgE-SwVnysF6BEEGMv0q829shOW2yygzkPqwlHNVVN0CwwGEPxt0W3p6cr_XLLFyEvl_fK_PkFEit7wpV4oWnVcl9FF6K_3d6Hrwz0aPjcOPTi15f627AhJKThA.YMhaYFm755yKcf7qAI9K_Zwwvmt54g-DIOvp9UKiFfM&amp;dib_tag=se&amp;keywords=Os+Alongs&amp;qid=1791071255&amp;s=digital-text&amp;sprefix=os+alongs%2Cdigital-text%2C202&amp;sr=1-16" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-shelf-panel" id="shelf-fase-2" role="tabpanel" aria-labelledby="tab-fase-2" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>Novas histórias e caminhos pelo universo.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver livros anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximos livros" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-fase-2" role="region" aria-label="Livros da Fase 2">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-2-capa.png" alt="Capa do livro O Extraordinário 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 06 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário 2</h3>
+                  <p class="book-summary">Em seu momento mais difícil, Ethan precisa enfrentar seu inimigo mais mortal: ele próprio — e salvar a todos de uma ameaça iminente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-2-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-2-summary-phase" hidden>Ethan Miles, um jovem comum com poderes sobrenaturais, terá que agora lidar com o seu pior e mais mortal inimigo: ele próprio.<br><br>Ethan está no maior momento de decadência de sua vida, agora sozinho, depressivo e sem esperança, ele precisa se salvar e salvar a todos de uma ameaça iminente. Porém, poderá contar com o apoio de um velho amigo, James Pendleton.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4187497216-o-extraordin%C3%A1rio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-2-capa.png" alt="Capa do livro Fragmentada 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 07 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada 2</h3>
+                  <p class="book-summary">Capitã respeitada, Evelline usa sua influência para ajudar os mais necessitados, mas um pressentimento a leva a investigar o grupo terrorista Osíris.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-2-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-2-summary-phase" hidden>Atualmente sendo uma Capitã do exército americano super conceituada e respeitada, Evelline consegue tocar sua vida pra frente após finalmente resolver todos os seus dilemas internos e externos, e decide usar sua influência para ajudar instituições de caridade e criar pautas para beneficiar os mais necessitados. Porém ela tem o pressentimento de que ainda há alguma coisa que ela deve investigar, e se prepara para ter revelações e lutar contra um grupo de terroristas chamado Osíris.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/3818398464-fragmentada-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-2-capa.png" alt="Capa do livro Muralha de Titânio 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 08 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio 2</h3>
+                  <p class="book-summary">Após deixar os ringues, Jack tenta reparar os danos do passado e proteger quem ama de uma ameaça poderosa, aprendendo que força bruta não será suficiente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-2-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-2-summary-phase" hidden>Depois de ser obrigado a se aposentar da sua brilhante carreira de lutador profissional, Jack se torna um administrador irreverente da maior rede de esportes e atletas do mundo, a qual ele mesmo fundou.<br><br>Dois anos após a luta com seu pai, Willard, Jack se vê atormentado pelo assassinato de Henry Bowers, que acabou cometendo em um momento de descontrole e loucura. E, procurando compensar o mal que causou, ele se dedica a ajudar instituições de caridade com tudo o que ganha, porém Hillary Duff faz uma proposta que pode realmente fazer a diferença e revolucionar a humanidade.<br><br>Entretanto, uma ameaça maior começa a caçá-los, com poder e força o suficiente para vencer qualquer um e a promessa de matar todos aqueles que Jack ama. Será que o Muralha de Titanium será páreo? Para ter alguma chance, Jack aprenderá que será necessário mais do que uma força bruta absurda para proteger aqueles que ama.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1100555008-muralha-de-tit%C3%A2nio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/sicario-sombrio-temporada-1-capa.png" alt="Capa de Sicário Sombrio, 1ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 09 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Sicário Sombrio</h3>
+                  <p class="book-subtitle">1ª Temporada</p>
+                  <p class="book-summary">Recrutado à força ainda criança, Peter Hood conquista a liberdade e assume a identidade de Sicário Sombrio ao investigar uma tentativa de assassinato.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="sicario-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="sicario-summary-phase" hidden>Com o enfraquecimento da corporação Australiana, Peter Hood finalmente tem enfim uma chance de liberdade após ter sido recrutado contra a sua vontade quando era criança e ainda morava em Pilgrim.<br><br>Peter passa pelo programa de super agentes, é treinado e desenvolve super habilidades. Agora tentando compreender quem se tornou, ao mesmo tempo em que usa todas as suas habilidades, inclusive seu talento de jamais errar o alvo, para ajudar as pessoas, Hood dá de cara com uma tentativa de assassinato inesperada, com Tarik Niazi como mandante. Sem entender o porquê de Tarik querer matá-lo, Peter parte para Istambul e assume a identidade de Sicário Sombrio, mas logo descobre que esse nome tem um peso muito grande e precede coisas muito brutais.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>O Extraordinário</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/530195200-sic%C3%A1rio-sombrio---1%C2%B0-temporada" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/as-amazonas-capa.png" alt="Capa do livro As Amazonas, de João Batista e Caroline Almeida">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 10 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>As Amazonas</h3>
+                  <p class="book-summary">As deusas amazonas Hipólita e Pentesileia vão ao Tártaro para enfrentar mudanças na realidade que ameaçam o Olimpo e o universo.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amazonas-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amazonas-summary-phase" hidden>Filhas de Ares, o deus da Guerra, e Otrera, Rainha das Amazonas, Hipólita e Pentesileia são duas deusas amazonas irmãs.<br><br>O Tártaro recebe a visita das duas deusas quando mudanças drásticas de realidade passam a acontecer e o destino do Olimpo e do universo corre perigo. As duas devem trabalhar juntas para impedir que a aniquilação venha sobre todas, mas Hipólita tem dúvidas a respeito de si própria e de sua vida.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Mitologia grega</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/As-Amazonas-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B654CRW8/ref=sr_1_12?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=29ZAD31WJP9TL&amp;dib=eyJ2IjoiMSJ9.3e2VaaJyIv5BYY6nhlkbEIUgoABPIlaPey_UnMsLxhHbgbsfXgBC8N1vk7TZiVkTu2PxGrTMotDWxtjIjd-uAC4WDYMVBnRw9zJiiYLqATuI1aRHX-LcaRnQHRGk5R5iihquYo-zCtlPxS8-0i0kpZHT7NmmDr4oZAFoXKduAqNcw5TH1L-_-V5zBvimLE06tzsbNjcqr1BjAzzw6WfJrfJlxkSXV2mvo0360JaOvVU.4beGayuwr4tH-igNe3D4WIxQ4QzE6Ry3JP5YOxwbh7g&amp;dib_tag=se&amp;keywords=As+Amazonas&amp;qid=1791072676&amp;s=digital-text&amp;sprefix=as+amazona%2Cdigital-text%2C204&amp;sr=1-12" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/interestelar-temporada-1-capa.png" alt="Capa de Interestelar, 1ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 11 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Interestelar</h3>
+                  <p class="book-subtitle">1ª Temporada</p>
+                  <p class="book-summary">Ao descobrir que é uma alienígena, a neurocirurgiã Mary Kimberly Watson assume o papel de heroína de Pilgrim e enfrenta uma ameaça familiar.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="interestelar-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="interestelar-summary-phase" hidden>Mary Kimberly Watson, uma neurocirurgiã muito experiente e dedicada ao seu trabalho e à sua vida, descobre de repente que é uma alienígena.<br><br>Mary está na busca de entender mais sobre si mesma enquanto assume o papel de heroína de Pilgrim deixado pelo Extraordinário. Com a ajuda de Thomas e Brandon, ela se dedica a descobrir quem é de verdade, ao mesmo tempo que salva a cidade de uma ameaça um tanto... "familiar".</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Interestelar</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>O Extraordinário</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Interestelar-Temporada-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B67CFGQR/ref=sr_1_10?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-10&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-ato-final-capa.png" alt="Capa de O Anarquista: O Ato Final, volume 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 12 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">O Ato Final</p>
+                  <p class="book-summary">Três anos após o atentado russo, James Pendleton e a SPOP partem para um acerto de contas definitivo — a última missão do Anarquista.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-final-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-final-summary-phase" hidden>Três anos após o atentado russo para tomar a Austrália à força, o Anarquista e a SPOP enfim chegam à Rússia para um acerto de contas definitivo. O Anarquista ainda lida com as dificuldades de ter sua cabeça a prêmio, e Abagor Kosarev está disposto a fazer de tudo para tornar tudo muito mais difícil.<br><br>Com a mente inundada por lembranças de seus pais, seu passado e sua missão, James Pendleton toma uma decisão derradeira: o Anarquista tem uma última e decisiva missão a cumprir antes de pendurar a máscara.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Anarquista</li>
+                    <li>Ação</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Anarquista-Ato-Final-Universo-Liter%C3%A1rio-ebook/dp/B0BFNYH9NS/ref=sr_1_4?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-4&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/zatspiders-de-orion-capa.png" alt="Capa do livro Zatspiders de Orion, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 13 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Zatspiders de Orion</h3>
+                  <p class="book-summary">Cinco aliados improváveis enfrentam um império intergaláctico e uma arma capaz de dominar civilizações e mudar a realidade.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="zatspiders-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="zatspiders-summary-phase" hidden>Inicialmente juntos por interesses próprios, mas depois unidos por um mal em comum, Morjhan, Brixell, Acirrilex, Taud e Zhor se encontram numa verdadeira prova de fogo: sozinhos, terão que dar conta de um império intergaláctico inteiro e de sua arma mais mortal, capaz de dominar civilizações inteiras e mudar o rumo de toda a realidade.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Zatspiders de Orion</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Zatspiders-Orion-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0C1CV1NPR/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=23YD6O1OBGZPR&amp;dib=eyJ2IjoiMSJ9.4qFWhEoXjDGXj7gKPaAN4Q._4fUQqDvZmU0o5o25Ysc2s6s8fQPdH4EaoLUBHqVLZg&amp;dib_tag=se&amp;keywords=zatspiders+de+orion&amp;qid=1791073594&amp;s=digital-text&amp;sprefix=zatspiders+de+orion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-oblivion-capa.png" alt="Capa de Os Alongs: Oblivion, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 14 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Oblivion</p>
+                  <p class="book-summary">Após um artefato trazer um alerta ao Berço dos Heróis, os Alongs e seus aliados enfrentam Oblivion e as profecias sobre uma ameaça mortal e atemporal.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-oblivion-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="alongs-oblivion-summary-phase" hidden>A maior equipe de super-heróis do planeta se reúne novamente para encarar uma ameaça mortal e atemporal. Os Alongs e o time Bravo se reúnem com o presidente e várias outras personalidades importantes da política para prestigiar a conclusão e o lançamento do Projeto Satélite Sentinela. Mas tudo vira do avesso quando um corpo metálico desconhecido atinge o Berço dos Heróis, trazendo uma mensagem de perigo iminente.<br><br>Os Alongs terão que enfrentar a grande ameaça e lidar com as profecias que ela traz, com a ajuda de um grupo bem semelhante ao deles, os Vigilantes, liderados pela Baronesa Vermelha, e também com a aparição inesperada de duas irmãs deusas amazonas que estão caçando essa mesma entidade chamada Oblivion.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Sombra</li>
+                    <li>As Amazonas</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Oblivion-Universo-Liter%C3%A1rio-ebook/dp/B0C1DKWQS7/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IVUNLEJWFOI5&amp;dib=eyJ2IjoiMSJ9.oJUz3Yw2Xoy140OEkMeh8hmrGbmnV9aSxaTgOEEkfWLGjHj071QN20LucGBJIEps.pX20-aA-IosQ-fXSZB4VdZtZODgQKFGnI8XDY1BtG1A&amp;dib_tag=se&amp;keywords=Os+alongs+oblivion&amp;qid=1791073756&amp;s=digital-text&amp;sprefix=os+alongs+oblivion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-shelf-panel" id="shelf-fase-3" role="tabpanel" aria-labelledby="tab-fase-3" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>Mais capítulos de um universo em expansão.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver livros anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximos livros" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-fase-3" role="region" aria-label="Livros da Fase 3">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-perdidos-na-terra-12-capa.png" alt="Capa de Os Alongs: Perdidos na Terra 12, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 15 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Perdidos na Terra 12</p>
+                  <p class="book-summary">Uma anomalia leva os Alongs a uma realidade paralela, onde se unem aos Invencíveis para enfrentar o Viajante e encontrar o caminho de volta.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-terra-12-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="alongs-terra-12-summary-phase" hidden>Ajudando a CIRCE a investigar uma anomalia no Deserto da Arábia, os Alongs acabam se envolvendo em um conflito de proporções imprevisíveis, que os leva a uma realidade paralela, onde encontrarão um novo mundo com uma realidade bem diferente.<br><br>Para encontrar e combater o vilão Viajante, os Alongs deverão se unir aos Invencíveis, os heróis da Terra 12, porém todos os membros têm o gênero invertido. Sob um clima de mistério, tensão e curiosidade, as duas equipes deverão encontrar uma forma de reverter a situação e, no meio do caminho, perceberão que nem tudo é o que parece.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Perdidos-Universo-Liter%C3%A1rio-ebook/dp/B0CFJY8SJS/ref=sr_1_6?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-6&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/nikita-capa.png" alt="Capa do livro Nikita, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 16 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                  <h3>Nikita</h3>
+                  <p class="book-summary">Após uma explosão comprometer sua audição e tirar a vida de seus pais, Hikari precisa escolher entre uma vida normal e o caminho da vingança como Nikita.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="nikita-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="nikita-summary-phase" hidden>Com sua audição comprometida por conta da mesma explosão que matou seus pais quando tinha apenas três anos, Hikari Yingtai dá tudo de si todos os dias para sobreviver. Até que, por um ato de culpa, a vida de Hikari está para dar outra reviravolta, e ela se vê diante da escolha de seguir uma vida minimamente normal ou trilhar o caminho da vingança, assumindo o codinome de assassina e mercenária Nikita, a deusa da morte.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Nikita</li>
+                    <li>Ação</li>
+                    <li>Fragmentada</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Nikita-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0CFK28P16/ref=sr_1_9?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-9&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-3-desmembrados-capa.png" alt="Capa de Fragmentada 3: Desmembrados, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 17 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada 3</h3>
+                  <p class="book-subtitle">Desmembrados</p>
+                  <p class="book-summary">Líder dos Alongs, a Capitã Armstrong precisa escolher entre manter a equipe unida ou impedir uma catástrofe que pode provocar uma terceira guerra mundial.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-3-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-3-summary-phase" hidden>Trilhando seu caminho de líder, Evelline tem de enfrentar um problema global que ameaça os tempos de paz e provoca uma terceira guerra mundial.<br><br>Com o Congresso Americano e as Nações Unidas fazendo pressão, a Capitã Armstrong terá que escolher entre manter os Alongs unidos ou evitar uma catástrofe nunca antes vista na história da humanidade.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Emily Karzark</li>
+                    <li>Sombra</li>
+                    <li>As Amazonas</li>
+                    <li>Espectro</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Desmembrados-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0CR9KHHJ3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-5&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/senhor-celeste-capa.png" alt="Capa do livro Senhor Celeste, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 18 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                  <h3>Senhor Celeste</h3>
+                  <p class="book-summary">Ao estudar o cadáver de um alienígena da Invasão Macabra, o arqueólogo Jonah Celeste se depara com um mundo inimaginável — e com o planeta paralisado no tempo.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="senhor-celeste-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="senhor-celeste-summary-phase" hidden>O arqueólogo britânico mais famoso do mundo, Jonah Moriarty Celeste, é incumbido de estudar o cadáver de um dos alienígenas invasores da famosa Invasão Macabra. Já tendo a carreira mais impecável do mundo, o orgulhoso Doutor Celeste se compromete com mais essa empreitada a fim de consagrar esse como sendo o trabalho de sua vida. Porém, esses estudos o levarão a um mundo inimaginável, onde Jonah encontrará coisas muito além da realidade, mas tudo fica pior quando, de repente, todo o planeta fica parado no tempo.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Senhor Celeste</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Senhor-Celeste-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DFV3P8SH/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3NOCMF00S2EWI&amp;dib=eyJ2IjoiMSJ9.lgaN_hfHudM7rE5LoYSAjHTajuf_4Kha3nqPK1f2DhVBfNMKn-HC9plLYRhXsYWwz_qktprs5SHVJZXOQu4Ig0EFIbvAkn2qcsdRg8swGS__Z4EX0Jh90UM7vCfjwOpRMSc5yIyfQSeys-hvcSuURVBilwr3eYCxHU5FsPXJ7heSbcPrzcWva4NLCMZzclxQbB4xNIl7hChG1eeGivh5y62yXBTkPKT8kjZ6VvsSsdc.5rb6qSBKktZTwgFsWj-3DW2fBjaDswUOgXMZliDDxWs&amp;dib_tag=se&amp;keywords=senhor+celeste&amp;qid=1791074494&amp;s=digital-text&amp;sprefix=senhor+celeste%2Cdigital-text%2C192&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-soberanos-capa.png" alt="Capa do livro Os Soberanos, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 19 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Soberanos</h3>
+                  <p class="book-summary">Em Kimera, o retorno do bruxo banido Maddock ameaça o reino, enquanto a princesa Emily precisa decidir se fará o sacrifício exigido pelo Violantis.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-soberanos-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="os-soberanos-summary-phase" hidden>Em Kimera, uma nação oculta de magos e feiticeiros, o Rei Alfred Karzark enfrenta dias sombrios após uma negociação falha. A relação com aliados se fragiliza, e radicais defendem dominação sobre o mundo.<br><br>Um antigo bruxo banido, Maddock, retorna, buscando vingança. O Rei mobiliza forças mágicas para impedi-lo. A princesa Emily Karzark enfrenta um dilema: sacrificar tudo como Mestra do Violantis?</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Emily Karzark</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Soberanos-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DR78YYY5/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=I74LGAJCIH41&amp;dib=eyJ2IjoiMSJ9.f-WeOjo4Z134NkBbMEW9UeMNVhohkIKMZ8DEWrBko4P3uq3gytBmkV3UKnNL7bZdQHa7rJxeuruhu3GawwCBK6ppDlaEA2GMOi38Yn4L_PqeslHAbgmn54hw3QvocY2uf8ei38lChd4V0Ui16gJkxFxAAsIjYLv9xSWf54TMGVGf6lGGgTlJgLY7HvjbsTJcDd9KCxt8EWbjbFRuvWUgGeBefd2LUjPk40exThe5Pes.SX91ugdme6Q5eb3xVo1b2pTCwd1lBI_yzoCP5wG-fPs&amp;dib_tag=se&amp;keywords=Os+Soberanos&amp;qid=1791074724&amp;s=digital-text&amp;sprefix=os+soberano%2Cdigital-text%2C193&amp;sr=1-4" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/as-amazonas-amazonomaquia-capa.png" alt="Capa de As Amazonas: Amazonomaquia, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 20 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>As Amazonas</h3>
+                  <p class="book-subtitle">Amazonomaquia</p>
+                  <p class="book-summary">Hércules marcha sobre Temiscira, enquanto Pentesileia e Hipólita enfrentam ameaças que podem destruir seu povo, o Panteão e o Olimpo.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amazonomaquia-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amazonomaquia-summary-phase" hidden>Um guerreiro praticamente imbatível avança em direção à Temiscira; com uma força divina, ele atropela as maiores guerreiras. As guerreiras Amazonas sofrem com uma pressão nunca vista antes em combate, e Pentesileia reage como guerreira e rainha para defender seu povo, mas é testada ao usar toda a sua força divina para parar o semideus Hércules, que busca o cinturão de Hipólita a todo custo.<br><br>Paralelamente a isso, o Panteão do deus da Guerra sofre com uma ameaça cósmica tão terrível que todo o Olimpo fica em alerta, e Ares se vê diante de uma escolha difícil e improvável.<br><br>Hipólita sofre as consequências por ter quebrado umas das principais leis impostas por Zeus, mas com o futuro de Temiscira, do Panteão e de Misó ameaçados, as duas irmãs unem forças novamente para impedir a destruição do próprio povo quando um ataque organizado entre Atenas, Micenas e Esparta vem sobre Temiscira. Mas essa relação de fraternidade entre as filhas de Ares e Otrera passa por seu momento derradeiro quando Hipólita encara uma realidade oculta, colocando em jogo o futuro de todo um povo.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/interestelar-temporada-2-capa.png" alt="Capa de Interestelar, 2ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 21 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>Interestelar</h3>
+                  <p class="book-subtitle">2ª Temporada</p>
+                  <p class="book-summary">Após chegar a Gar e ser acolhida por seu povo, Mary precisa decidir se ficará em seu planeta natal ou cumprirá a promessa feita a Thomas, enquanto uma verdade perturbadora vem à tona.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="interestelar-2-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="interestelar-2-summary-phase" hidden>Após completar a viagem de três anos-luz rumo ao seu planeta natal, Gar, Mary é saudada pelo seu povo de nascença, os Gareanos.<br><br>Recebida entre os seus semelhantes da raça, ela é acolhida como filha de Gare, o Maior. Apesar de toda a celebração por sua chegada e autodescoberta como Gareana, Mary não consegue aceitar ficar em Gar por causa da promessa feita a Thomas, e isso inicia uma série de problemas e revela uma verdade perturbadora sobre o motivo de Gar querer Mary de volta à civilização Gareana.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Interestelar</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/espectro-capa.png" alt="Capa do livro Espectro, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 22 • FASE 3</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>Espectro</h3>
+                  <p class="book-summary">De volta à Ucrânia, Anton Koslov tenta se adaptar à vida de cidadão comum e super-herói, enquanto antigos fantasmas de Pripyat voltam a assombrar a cidade.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="espectro-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="espectro-summary-phase" hidden>Novo em um novo mundo, Anton Koslov busca se adaptar à vida normal de um cidadão comum enquanto secretamente também tenta se adaptar à vida de um super-herói. Depois da deportação de volta à Ucrânia, a família de Anton se encaixa no programa de reestruturação da “Nova Pripyat”. Ao mesmo tempo que Anton conhece a nova faceta da cidade, também descobre antigos fantasmas que todos acreditaram terem sido esquecidos no dia 26 de abril de 1986.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Espectro</li>
+                    <li>Ação</li>
+                    <li>Comédia</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-3-capa.png" alt="Capa do livro O Extraordinário 3, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>O Extraordinário 3</h3>
+                  <p class="book-summary">Após reconstruir sua vida em Indaiá, Ethan enfrenta o legado de seu pai, cujos erros de décadas atrás ameaçam destruir tudo o que conquistou e todos que ama.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-3-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-3-summary-phase" hidden>Ethan recomeça sua vida praticamente do zero depois de se recuperar de ferimentos profundos que quase o levaram à morte. Dessa vez, aproveitando a oportunidade de construir uma nova vida como pessoa e como super-herói, ele cria o estilo de vida perfeito e se torna o homem mais bem-sucedido de Indaiá. Feliz e casado, Ethan Miles alcança um patamar de vida que jamais pensou ser possível.<br><br>Mas ele leva um choque de realidade quando mais coisas sobre o passado de seu pai, Henry Stevens, começam a vir à tona. Os erros de seu pai, cometidos há quatro décadas, retornam para ameaçar o presente e destruir a vida perfeita de Ethan e de todos aqueles que ele ama.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Romance</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/sicario-sombrio-temporada-2-capa.png" alt="Capa de Sicário Sombrio, 2ª Temporada, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>Sicário Sombrio</h3>
+                  <p class="book-subtitle">2ª Temporada</p>
+                  <p class="book-summary">Após três anos de investigação, Peter Hood segue a trilha de um serial killer até Whitechapel, onde assassinatos semelhantes aos de 1888 voltam a aterrorizar Londres.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="sicario-sombrio-2-summary-phase">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="sicario-sombrio-2-summary-phase" hidden>Após três anos de investigação concentrada desde que Peter Hood desertou dos Alongs, o último rastro fresco do temido assassino Sicário Sombrio esfriou em Londres, Reino Unido. A trilha de sangue apavorante deixada pelo serial killer leva Peter até Whitechapel, onde assassinatos similares aos de 1888 começam a aflorar os nervos da cidade outra vez, levando Londres a um toque de recolher e a uma investigação frenética.<br><br>Peter Hood enfrenta enigmas e charadas capazes de ameaçar até a família real, e sua busca constante pelo serial killer o leva a descobertas arrepiantes e perdas dolorosas. Mas Peter encara o maior desafio de sua vida ao descobrir o pior segredo, que põe sua vida em risco.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Romance</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-alfa-reset-capa.png" alt="Capa de Os Alongs: Alfa Reset, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Alfa Reset</p>
+                  <p class="book-summary">Sinopse em breve.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                                        <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-omega-finis-capa.png" alt="Capa de Os Alongs: Omega Finis, de João Muniz">
+                <div class="book-info">
+                  <div class="book-meta"><span>FASE 3 • POSIÇÃO A DEFINIR</span><span class="status status-soon">Em Breve</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Omega Finis</p>
+                  <p class="book-summary">Sinopse em breve.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Sicário Sombrio</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-shelf-panel" id="shelf-curtas" role="tabpanel" aria-labelledby="tab-curtas" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>Histórias breves e aventuras independentes deste universo.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver histórias curtas anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximas histórias curtas" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-curtas" role="region" aria-label="Histórias curtas">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-historia-de-amor-capa.png" alt="Capa de O Extraordinário: Uma História de Amor, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>HISTÓRIA CURTA</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário</h3>
+                  <p class="book-subtitle">Uma História de Amor</p>
+                  <p class="book-summary">A história de Ethan e Nancy revela como o amor transformou a visão de mundo daquele que se tornaria um dos maiores heróis do planeta.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-amor-summary-short">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-amor-summary-short" hidden>Uma história curta que conta o relacionamento amoroso entre Ethan Miles e Nancy Myers. Este drama traz elementos canônicos que complementam as histórias dos personagens e introduz Nancy neste grande universo, com momentos de alegria, emoção, romance e os bons toques de uma história romântica.<br><br>A história mostra como esse relacionamento mudou para sempre a forma como Ethan vê o mundo, moldando o personagem que, no futuro, se tornaria um dos maiores heróis do mundo.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Extraordin%C3%A1rio-Hist%C3%B3ria-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B55G5BN7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791075486&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-8&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/amigas-capa.png" alt="Capa do livro Amigas, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>HISTÓRIA CURTA</span><span class="status status-available">Disponível</span></div>
+                  <h3>Amigas</h3>
+                  <p class="book-summary">Althaia e Hipólita constroem uma forte amizade em Indaiá, mas uma conspiração internacional ameaça os heróis e pode levar a uma tentativa de aniquilação global.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amigas-summary-short">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amigas-summary-short" hidden>Althaia e Hipólita passam a viver juntas, desgarradas dos Alongs, em Indaiá, um país paradisíaco próximo à Indonésia. Logo descobrem que têm muito em comum: as duas estão longe de seus respectivos lares e sem perspectiva do que fazer a seguir. Uma deusa e uma humana vivem juntas e criam um elo de amizade muito forte, com muito a aprender uma com a outra.<br><br>Mas elas descobrem um contrabando de armas de alta tecnologia, usando antigos aparatos dos Salvadores e ligado a uma conspiração internacional que tem como fonte a energia extraordinária extraída do Paradoxo. As duas descobrem que o principal alvo dessa conspiração são os heróis e precisam tomar uma decisão drástica diante de uma tentativa de aniquilação global.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Flora</li>
+                    <li>Ação</li>
+                    <li>Comédia</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Amigas-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0CY1NRRJ6/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2UZRZZQ949O6F&amp;dib=eyJ2IjoiMSJ9.SS7bqB7dEuAyWIG-Wkgk_g.bckii27IESeqLtqPvDc9kc93wmCPx-m-wA-a6zdCVjI&amp;dib_tag=se&amp;keywords=amigas+universerunity&amp;qid=1791075788&amp;s=digital-text&amp;sprefix=amigas+universerunity%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-shelf-panel" id="shelf-cronologica" role="tabpanel" aria-labelledby="tab-cronologica" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>Acompanhe os acontecimentos na sequência em que ocorrem.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver histórias anteriores na ordem cronológica" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximas histórias na ordem cronológica" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" role="region" aria-label="Livros em ordem cronológica">
+<article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-historia-de-amor-capa.png" alt="Capa de O Extraordinário: Uma História de Amor, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>HISTÓRIA CURTA</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário</h3>
+                  <p class="book-subtitle">Uma História de Amor</p>
+                  <p class="book-summary">A história de Ethan e Nancy revela como o amor transformou a visão de mundo daquele que se tornaria um dos maiores heróis do planeta.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-amor-summary-short-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-amor-summary-short-chronological" hidden>Uma história curta que conta o relacionamento amoroso entre Ethan Miles e Nancy Myers. Este drama traz elementos canônicos que complementam as histórias dos personagens e introduz Nancy neste grande universo, com momentos de alegria, emoção, romance e os bons toques de uma história romântica.<br><br>A história mostra como esse relacionamento mudou para sempre a forma como Ethan vê o mundo, moldando o personagem que, no futuro, se tornaria um dos maiores heróis do mundo.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Extraordin%C3%A1rio-Hist%C3%B3ria-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B55G5BN7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791075486&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-8&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/nikita-capa.png" alt="Capa do livro Nikita, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 16 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Nikita</h3>
+                <p class="book-summary">Após uma explosão comprometer sua audição e tirar a vida de seus pais, Hikari precisa escolher entre uma vida normal e o caminho da vingança como Nikita.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="nikita-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="nikita-summary-release-chronological" hidden>Com sua audição comprometida por conta da mesma explosão que matou seus pais quando tinha apenas três anos, Hikari Yingtai dá tudo de si todos os dias para sobreviver. Até que, por um ato de culpa, a vida de Hikari está para dar outra reviravolta, e ela se vê diante da escolha de seguir uma vida minimamente normal ou trilhar o caminho da vingança, assumindo o codinome de assassina e mercenária Nikita, a deusa da morte.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Nikita</li>
+                  <li>Ação</li>
+                  <li>Fragmentada</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Nikita-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0CFK28P16/ref=sr_1_9?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-9&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-capa.png" alt="Capa do livro O Extraordinário, Livro 1, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 01 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário</h3>
+                  <p class="book-summary">Após um acidente fatal, Ethan Stevens Miles ganha uma semana de vida — e descobre que o mundo é mais estranho do que imaginava.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-summary-release-chronological" hidden>Ethan Stevens Miles é um jovem comum, residente da cidade de Pilgrim, e geralmente esquecido pelas pessoas. Sua vida está para mudar completamente após um acidente, que o deixa entre a vida e a morte. Tendo apenas uma semana de vida restante, algo supremo acontece, e ele se dá conta de que o mundo é mais estranho do que parece.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Fragmentada</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/story/3626181120-o-extraordin%C3%A1rio?" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-capa.png" alt="Capa do livro Fragmentada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 02 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada</h3>
+                  <p class="book-summary">Após descobrir poderes ligados à sua linhagem, Evelline precisa enfrentar um grupo secreto em Pilgrim e o despertar de um lado perigoso de si mesma.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-summary-release-chronological" hidden>Após os eventos de "O Extraordinário", Evelline tenta tocar sua vida normalmente, mas ela descobre que seus antepassados ainda têm coisas a revelar.<br><br>Redescobrindo um poder adormecido vindo de sua antiga linhagem, Evelline é guiada por sua avó Margareth a descobrir que também tem super habilidades. Evelline terá que lidar com um grupo secreto que vive nas sombras de Pilgrim chamado "Os Salvadores".<br><br>Tentando acabar com uma guerra oculta e muito antiga, Evelline terá que lutar contra alguém que um dia chamou de amiga, ao mesmo tempo que desperta um lado seu bastante cruel e perigoso: a Fragmentada.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>O Extraordinário</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0B5NM3WST/ref=sr_1_11?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2XXPXB162UO7&amp;dib=eyJ2IjoiMSJ9.a_p-1xdbHuNTVVUftGPcvCzMcHd90mXeI6hk6_LawF6ZgYtfzYrVN9hiki_74iwYyYWW4BlVEbZnrSS5ITSqOisBDfsKPwR63v7wV5vD9_M6-ESnMGkXGCWeQzfdKyW5EFEr72Ytx78UxzclRdWu4LAPeBCB_zDMNVSnarTha26xgVP8ER9dEMM9pEivLxE6F_xeQUd7l68qV6utoysIpDv08aHotHh6gDR6Vj3M-Dg.ky6ylRGlJtEVgW2lrxDhi14wdc_sXH2lGCQLZFmLVFk&amp;dib_tag=se&amp;keywords=Fragmentada&amp;qid=1791069673&amp;s=digital-text&amp;sprefix=fragmentad%2Cdigital-text%2C210&amp;sr=1-11" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-capa.png" alt="Capa do livro Muralha de Titânio, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 03 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio</h3>
+                  <p class="book-summary">O lutador Jack Piwbrins precisa enfrentar uma ameaça que coloca sua família em risco e descobrir a ligação entre sua força e o nome Armstrong.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-summary-release-chronological" hidden>Jack Piwbrins é o melhor e mais famoso lutador do mundo inteiro, conhecido por sua força sobre-humana e seu poder descomunal. Quando sua vida e a de todos os seus parentes correm risco, ele se vê obrigado a encarar uma ameaça estranha — e está prestes a descobrir que toda a sua força tem total envolvimento com um nome: "Armstrong".</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Fragmentada</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1055597312-muralha-de-tit%C3%A2nio" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-capa.png" alt="Capa do livro O Anarquista, volume 1: A Justiça Não Dorme, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 04 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">A Justiça Não Dorme</p>
+                  <p class="book-summary">Quando as corporações dominam e a Austrália está à beira do colapso, James Pendleton retorna para enfrentar os tiranos — e as revelações de seu próprio passado.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-summary-release-chronological" hidden>Em um mundo onde o poder governamental é quase diminuto e as corporações dominam, uma lenda surge para punir todos aqueles que são corruptos e desonestos.<br><br>James Pendleton se vê obrigado a voltar a sua terra quando ela está à beira de um iminente colapso. Sem muitas respostas do seu passado, ele vai atrás dos tiranos que causaram todo o caos na Austrália, porém mesmo ele não estando sozinho, terá de encarar perdas e situações muito difíceis pra justiça prevalecer, mas será que James será capaz de lidar com as fortes revelações que se aproximam?</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Anarquista</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4091683584-o-anarquista-vol-1--a-justi%C3%A7a-n%C3%A3o-dorme" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/os-alongs-capa.png" alt="Capa do livro Os Alongs: Invasão Macabra, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 05 • FASE 1</span><span class="status status-available">Disponível</span></div>
+                  <h3>Os Alongs</h3>
+                  <p class="book-subtitle">Invasão Macabra</p>
+                  <p class="book-summary">Ethan, Evelline e Jack se unem para enfrentar o lendário Fusion e impedir que criaturas de outro lugar invadam a Terra por um portal rosa.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-alongs-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="os-alongs-summary-release-chronological" hidden>Ethan, Evelline e Jack são o trio de heróis mais poderosos da terra, eles deverão se unir para resolver casos de desaparecimentos inexplicáveis e dar fim a uma guerra silenciosa que já dura milênios contra uma ameaça superior. Eles também poderão contar com o apoio de um quarto integrante na equipe.<br><br>Reunidos para enfrentar o legendário vilão Fusion, os Alongs têm a difícil missão de evitar um apocalipse iminente quando um portal rosa é aberto e criaturas de outro lugar começam a invadir a Terra.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Os Alongs</li>
+                    <li>O Extraordinário</li>
+                    <li>Fragmentada</li>
+                    <li>Muralha de Titânio</li>
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Invas%C3%A3o-Universo-Liter%C3%A1rio-ebook/dp/B0B5PR667X/ref=sr_1_16?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2ESOAINAF7B6B&amp;dib=eyJ2IjoiMSJ9.pLkhqO8nYhBEooV8vWgopNT2rwi-5U7YD3-kTJ6NgD-akhrINzPFbDOBW4jONcWyxGr_M4076WLWsg_TkTpyVeA2wdvi7I4tgZoTEXOMDcNR-vPyEgE-SwVnysF6BEEGMv0q829shOW2yygzkPqwlHNVVN0CwwGEPxt0W3p6cr_XLLFyEvl_fK_PkFEit7wpV4oWnVcl9FF6K_3d6Hrwz0aPjcOPTi15f627AhJKThA.YMhaYFm755yKcf7qAI9K_Zwwvmt54g-DIOvp9UKiFfM&amp;dib_tag=se&amp;keywords=Os+Alongs&amp;qid=1791071255&amp;s=digital-text&amp;sprefix=os+alongs%2Cdigital-text%2C202&amp;sr=1-16" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/senhor-celeste-capa.png" alt="Capa do livro Senhor Celeste, de João Muniz">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 18 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Senhor Celeste</h3>
+                <p class="book-summary">Ao estudar o cadáver de um alienígena da Invasão Macabra, o arqueólogo Jonah Celeste se depara com um mundo inimaginável — e com o planeta paralisado no tempo.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="senhor-celeste-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="senhor-celeste-summary-release-chronological" hidden>O arqueólogo britânico mais famoso do mundo, Jonah Moriarty Celeste, é incumbido de estudar o cadáver de um dos alienígenas invasores da famosa Invasão Macabra. Já tendo a carreira mais impecável do mundo, o orgulhoso Doutor Celeste se compromete com mais essa empreitada a fim de consagrar esse como sendo o trabalho de sua vida. Porém, esses estudos o levarão a um mundo inimaginável, onde Jonah encontrará coisas muito além da realidade, mas tudo fica pior quando, de repente, todo o planeta fica parado no tempo.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Senhor Celeste</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Senhor-Celeste-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DFV3P8SH/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3NOCMF00S2EWI&amp;dib=eyJ2IjoiMSJ9.lgaN_hfHudM7rE5LoYSAjHTajuf_4Kha3nqPK1f2DhVBfNMKn-HC9plLYRhXsYWwz_qktprs5SHVJZXOQu4Ig0EFIbvAkn2qcsdRg8swGS__Z4EX0Jh90UM7vCfjwOpRMSc5yIyfQSeys-hvcSuURVBilwr3eYCxHU5FsPXJ7heSbcPrzcWva4NLCMZzclxQbB4xNIl7hChG1eeGivh5y62yXBTkPKT8kjZ6VvsSsdc.5rb6qSBKktZTwgFsWj-3DW2fBjaDswUOgXMZliDDxWs&amp;dib_tag=se&amp;keywords=senhor+celeste&amp;qid=1791074494&amp;s=digital-text&amp;sprefix=senhor+celeste%2Cdigital-text%2C192&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/o-extraordinario-2-capa.png" alt="Capa do livro O Extraordinário 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 06 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Extraordinário 2</h3>
+                  <p class="book-summary">Em seu momento mais difícil, Ethan precisa enfrentar seu inimigo mais mortal: ele próprio — e salvar a todos de uma ameaça iminente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="extraordinario-2-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="extraordinario-2-summary-release-chronological" hidden>Ethan Miles, um jovem comum com poderes sobrenaturais, terá que agora lidar com o seu pior e mais mortal inimigo: ele próprio.<br><br>Ethan está no maior momento de decadência de sua vida, agora sozinho, depressivo e sem esperança, ele precisa se salvar e salvar a todos de uma ameaça iminente. Porém, poderá contar com o apoio de um velho amigo, James Pendleton.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Extraordinário</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/4187497216-o-extraordin%C3%A1rio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/fragmentada-2-capa.png" alt="Capa do livro Fragmentada 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 07 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Fragmentada 2</h3>
+                  <p class="book-summary">Capitã respeitada, Evelline usa sua influência para ajudar os mais necessitados, mas um pressentimento a leva a investigar o grupo terrorista Osíris.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-2-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="fragmentada-2-summary-release-chronological" hidden>Atualmente sendo uma Capitã do exército americano super conceituada e respeitada, Evelline consegue tocar sua vida pra frente após finalmente resolver todos os seus dilemas internos e externos, e decide usar sua influência para ajudar instituições de caridade e criar pautas para beneficiar os mais necessitados. Porém ela tem o pressentimento de que ainda há alguma coisa que ela deve investigar, e se prepara para ter revelações e lutar contra um grupo de terroristas chamado Osíris.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fragmentada</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/3818398464-fragmentada-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/muralha-de-titanio-2-capa.png" alt="Capa do livro Muralha de Titânio 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 08 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Muralha de Titânio 2</h3>
+                  <p class="book-summary">Após deixar os ringues, Jack tenta reparar os danos do passado e proteger quem ama de uma ameaça poderosa, aprendendo que força bruta não será suficiente.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="muralha-2-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="muralha-2-summary-release-chronological" hidden>Depois de ser obrigado a se aposentar da sua brilhante carreira de lutador profissional, Jack se torna um administrador irreverente da maior rede de esportes e atletas do mundo, a qual ele mesmo fundou.<br><br>Dois anos após a luta com seu pai, Willard, Jack se vê atormentado pelo assassinato de Henry Bowers, que acabou cometendo em um momento de descontrole e loucura. E, procurando compensar o mal que causou, ele se dedica a ajudar instituições de caridade com tudo o que ganha, porém Hillary Duff faz uma proposta que pode realmente fazer a diferença e revolucionar a humanidade.<br><br>Entretanto, uma ameaça maior começa a caçá-los, com poder e força o suficiente para vencer qualquer um e a promessa de matar todos aqueles que Jack ama. Será que o Muralha de Titanium será páreo? Para ter alguma chance, Jack aprenderá que será necessário mais do que uma força bruta absurda para proteger aqueles que ama.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Muralha de Titânio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Sombra</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/1100555008-muralha-de-tit%C3%A2nio-2" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/sicario-sombrio-temporada-1-capa.png" alt="Capa de Sicário Sombrio, 1ª Temporada, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 09 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Sicário Sombrio</h3>
+                  <p class="book-subtitle">1ª Temporada</p>
+                  <p class="book-summary">Recrutado à força ainda criança, Peter Hood conquista a liberdade e assume a identidade de Sicário Sombrio ao investigar uma tentativa de assassinato.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="sicario-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="sicario-summary-release-chronological" hidden>Com o enfraquecimento da corporação Australiana, Peter Hood finalmente tem enfim uma chance de liberdade após ter sido recrutado contra a sua vontade quando era criança e ainda morava em Pilgrim.<br><br>Peter passa pelo programa de super agentes, é treinado e desenvolve super habilidades. Agora tentando compreender quem se tornou, ao mesmo tempo em que usa todas as suas habilidades, inclusive seu talento de jamais errar o alvo, para ajudar as pessoas, Hood dá de cara com uma tentativa de assassinato inesperada, com Tarik Niazi como mandante. Sem entender o porquê de Tarik querer matá-lo, Peter parte para Istambul e assume a identidade de Sicário Sombrio, mas logo descobre que esse nome tem um peso muito grande e precede coisas muito brutais.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Sicário Sombrio</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>O Extraordinário</li>
+                    <li>Anarquista</li>
+                  </ul>
+                  <a class="book-link" href="https://www.dreame.com/pt/story/530195200-sic%C3%A1rio-sombrio---1%C2%B0-temporada" target="_blank" rel="noopener noreferrer">Ler no Dreame <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/as-amazonas-capa.png" alt="Capa do livro As Amazonas, de João Batista e Caroline Almeida">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 10 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>As Amazonas</h3>
+                  <p class="book-summary">As deusas amazonas Hipólita e Pentesileia vão ao Tártaro para enfrentar mudanças na realidade que ameaçam o Olimpo e o universo.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amazonas-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amazonas-summary-release-chronological" hidden>Filhas de Ares, o deus da Guerra, e Otrera, Rainha das Amazonas, Hipólita e Pentesileia são duas deusas amazonas irmãs.<br><br>O Tártaro recebe a visita das duas deusas quando mudanças drásticas de realidade passam a acontecer e o destino do Olimpo e do universo corre perigo. As duas devem trabalhar juntas para impedir que a aniquilação venha sobre todas, mas Hipólita tem dúvidas a respeito de si própria e de sua vida.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Mitologia grega</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/As-Amazonas-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0B654CRW8/ref=sr_1_12?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=29ZAD31WJP9TL&amp;dib=eyJ2IjoiMSJ9.3e2VaaJyIv5BYY6nhlkbEIUgoABPIlaPey_UnMsLxhHbgbsfXgBC8N1vk7TZiVkTu2PxGrTMotDWxtjIjd-uAC4WDYMVBnRw9zJiiYLqATuI1aRHX-LcaRnQHRGk5R5iihquYo-zCtlPxS8-0i0kpZHT7NmmDr4oZAFoXKduAqNcw5TH1L-_-V5zBvimLE06tzsbNjcqr1BjAzzw6WfJrfJlxkSXV2mvo0360JaOvVU.4beGayuwr4tH-igNe3D4WIxQ4QzE6Ry3JP5YOxwbh7g&amp;dib_tag=se&amp;keywords=As+Amazonas&amp;qid=1791072676&amp;s=digital-text&amp;sprefix=as+amazona%2Cdigital-text%2C204&amp;sr=1-12" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/o-anarquista-ato-final-capa.png" alt="Capa de O Anarquista: O Ato Final, volume 2, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 12 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>O Anarquista</h3>
+                  <p class="book-subtitle">O Ato Final</p>
+                  <p class="book-summary">Três anos após o atentado russo, James Pendleton e a SPOP partem para um acerto de contas definitivo — a última missão do Anarquista.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="anarquista-final-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="anarquista-final-summary-release-chronological" hidden>Três anos após o atentado russo para tomar a Austrália à força, o Anarquista e a SPOP enfim chegam à Rússia para um acerto de contas definitivo. O Anarquista ainda lida com as dificuldades de ter sua cabeça a prêmio, e Abagor Kosarev está disposto a fazer de tudo para tornar tudo muito mais difícil.<br><br>Com a mente inundada por lembranças de seus pais, seu passado e sua missão, James Pendleton toma uma decisão derradeira: o Anarquista tem uma última e decisiva missão a cumprir antes de pendurar a máscara.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>O Anarquista</li>
+                    <li>Ação</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Anarquista-Ato-Final-Universo-Liter%C3%A1rio-ebook/dp/B0BFNYH9NS/ref=sr_1_4?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-4&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+                <img class="book-cover-image" src="assets/zatspiders-de-orion-capa.png" alt="Capa do livro Zatspiders de Orion, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>LIVRO 13 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                  <h3>Zatspiders de Orion</h3>
+                  <p class="book-summary">Cinco aliados improváveis enfrentam um império intergaláctico e uma arma capaz de dominar civilizações e mudar a realidade.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="zatspiders-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="zatspiders-summary-release-chronological" hidden>Inicialmente juntos por interesses próprios, mas depois unidos por um mal em comum, Morjhan, Brixell, Acirrilex, Taud e Zhor se encontram numa verdadeira prova de fogo: sozinhos, terão que dar conta de um império intergaláctico inteiro e de sua arma mais mortal, capaz de dominar civilizações inteiras e mudar o rumo de toda a realidade.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Zatspiders de Orion</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Zatspiders-Orion-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0C1CV1NPR/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=23YD6O1OBGZPR&amp;dib=eyJ2IjoiMSJ9.4qFWhEoXjDGXj7gKPaAN4Q._4fUQqDvZmU0o5o25Ysc2s6s8fQPdH4EaoLUBHqVLZg&amp;dib_tag=se&amp;keywords=zatspiders+de+orion&amp;qid=1791073594&amp;s=digital-text&amp;sprefix=zatspiders+de+orion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-oblivion-capa.png" alt="Capa de Os Alongs: Oblivion, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 14 • FASE 2</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Oblivion</p>
+                <p class="book-summary">Após um artefato trazer um alerta ao Berço dos Heróis, os Alongs e seus aliados enfrentam Oblivion e as profecias sobre uma ameaça mortal e atemporal.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-oblivion-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="alongs-oblivion-summary-release-chronological" hidden>A maior equipe de super-heróis do planeta se reúne novamente para encarar uma ameaça mortal e atemporal. Os Alongs e o time Bravo se reúnem com o presidente e várias outras personalidades importantes da política para prestigiar a conclusão e o lançamento do Projeto Satélite Sentinela. Mas tudo vira do avesso quando um corpo metálico desconhecido atinge o Berço dos Heróis, trazendo uma mensagem de perigo iminente.<br><br>Os Alongs terão que enfrentar a grande ameaça e lidar com as profecias que ela traz, com a ajuda de um grupo bem semelhante ao deles, os Vigilantes, liderados pela Baronesa Vermelha, e também com a aparição inesperada de duas irmãs deusas amazonas que estão caçando essa mesma entidade chamada Oblivion.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                <li>O Extraordinário</li>
+                <li>Fragmentada</li>
+                <li>Muralha de Titânio</li>
+                <li>Sicário Sombrio</li>
+                <li>Ação</li>
+                  <li>Sombra</li>
+                  <li>As Amazonas</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Oblivion-Universo-Liter%C3%A1rio-ebook/dp/B0C1DKWQS7/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2IVUNLEJWFOI5&amp;dib=eyJ2IjoiMSJ9.oJUz3Yw2Xoy140OEkMeh8hmrGbmnV9aSxaTgOEEkfWLGjHj071QN20LucGBJIEps.pX20-aA-IosQ-fXSZB4VdZtZODgQKFGnI8XDY1BtG1A&amp;dib_tag=se&amp;keywords=Os+alongs+oblivion&amp;qid=1791073756&amp;s=digital-text&amp;sprefix=os+alongs+oblivion%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/amigas-capa.png" alt="Capa do livro Amigas, de João Batista">
+                <div class="book-info">
+                  <div class="book-meta"><span>HISTÓRIA CURTA</span><span class="status status-available">Disponível</span></div>
+                  <h3>Amigas</h3>
+                  <p class="book-summary">Althaia e Hipólita constroem uma forte amizade em Indaiá, mas uma conspiração internacional ameaça os heróis e pode levar a uma tentativa de aniquilação global.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="amigas-summary-short-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="amigas-summary-short-chronological" hidden>Althaia e Hipólita passam a viver juntas, desgarradas dos Alongs, em Indaiá, um país paradisíaco próximo à Indonésia. Logo descobrem que têm muito em comum: as duas estão longe de seus respectivos lares e sem perspectiva do que fazer a seguir. Uma deusa e uma humana vivem juntas e criam um elo de amizade muito forte, com muito a aprender uma com a outra.<br><br>Mas elas descobrem um contrabando de armas de alta tecnologia, usando antigos aparatos dos Salvadores e ligado a uma conspiração internacional que tem como fonte a energia extraordinária extraída do Paradoxo. As duas descobrem que o principal alvo dessa conspiração são os heróis e precisam tomar uma decisão drástica diante de uma tentativa de aniquilação global.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>As Amazonas</li>
+                    <li>Flora</li>
+                    <li>Ação</li>
+                    <li>Comédia</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/Amigas-Universo-Liter%C3%A1rio-Unity-Arco-ebook/dp/B0CY1NRRJ6/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2UZRZZQ949O6F&amp;dib=eyJ2IjoiMSJ9.SS7bqB7dEuAyWIG-Wkgk_g.bckii27IESeqLtqPvDc9kc93wmCPx-m-wA-a6zdCVjI&amp;dib_tag=se&amp;keywords=amigas+universerunity&amp;qid=1791075788&amp;s=digital-text&amp;sprefix=amigas+universerunity%2Cdigital-text%2C190&amp;sr=1-1" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/os-alongs-perdidos-na-terra-12-capa.png" alt="Capa de Os Alongs: Perdidos na Terra 12, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 15 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Alongs</h3>
+                <p class="book-subtitle">Perdidos na Terra 12</p>
+                <p class="book-summary">Uma anomalia leva os Alongs a uma realidade paralela, onde se unem aos Invencíveis para enfrentar o Viajante e encontrar o caminho de volta.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="alongs-terra-12-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="alongs-terra-12-summary-release-chronological" hidden>Ajudando a CIRCE a investigar uma anomalia no Deserto da Arábia, os Alongs acabam se envolvendo em um conflito de proporções imprevisíveis, que os leva a uma realidade paralela, onde encontrarão um novo mundo com uma realidade bem diferente.<br><br>Para encontrar e combater o vilão Viajante, os Alongs deverão se unir aos Invencíveis, os heróis da Terra 12, porém todos os membros têm o gênero invertido. Sob um clima de mistério, tensão e curiosidade, as duas equipes deverão encontrar uma forma de reverter a situação e, no meio do caminho, perceberão que nem tudo é o que parece.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                <li>O Extraordinário</li>
+                <li>Fragmentada</li>
+                <li>Muralha de Titânio</li>
+                <li>Sicário Sombrio</li>
+                <li>Ação</li>
+                <li>Drama</li>
+                  <li>Sombra</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Alongs-Perdidos-Universo-Liter%C3%A1rio-ebook/dp/B0CFJY8SJS/ref=sr_1_6?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-6&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/fragmentada-3-desmembrados-capa.png" alt="Capa de Fragmentada 3: Desmembrados, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 17 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Fragmentada 3</h3>
+                <p class="book-subtitle">Desmembrados</p>
+                <p class="book-summary">Líder dos Alongs, a Capitã Armstrong precisa escolher entre manter a equipe unida ou impedir uma catástrofe que pode provocar uma terceira guerra mundial.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="fragmentada-3-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="fragmentada-3-summary-release-chronological" hidden>Trilhando seu caminho de líder, Evelline tem de enfrentar um problema global que ameaça os tempos de paz e provoca uma terceira guerra mundial.<br><br>Com o Congresso Americano e as Nações Unidas fazendo pressão, a Capitã Armstrong terá que escolher entre manter os Alongs unidos ou evitar uma catástrofe nunca antes vista na história da humanidade.</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Os Alongs</li>
+                  <li>O Extraordinário</li>
+                  <li>Muralha de Titânio</li>
+                  <li>Sicário Sombrio</li>
+                  <li>Fragmentada</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                  <li>Emily Karzark</li>
+                  <li>Sombra</li>
+                  <li>As Amazonas</li>
+                  <li>Espectro</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Fragmentada-Desmembrados-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0CR9KHHJ3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.skd-RRtRf11Q2uZU-nFr-nU2uRUAgzs96YFBUJUKM1VL1K8SU_uDNJyGQi38XFY5bElQvIRdQN--W20h3uwQe_dqVGp8XHVIJi9rh-wYkmo04nJx9CxDNELiEoY4DKxlJ7HZgsWKV9sxNFMuAINCyeJscsMgjQavzK-xSpWWlXY.S5NGiOsSbDHbWd9Bu1LmfQRcx0tJq7Pt0ivW_SmBiS8&amp;dib_tag=se&amp;qid=1791073116&amp;refinements=p_27%3AJo%C3%A3o+Batista+Muniz&amp;s=digital-text&amp;sr=1-5&amp;text=Jo%C3%A3o+Batista+Muniz" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+<article class="book-card">
+              <img class="book-cover-image" src="assets/os-soberanos-capa.png" alt="Capa do livro Os Soberanos, de João Batista">
+              <div class="book-info">
+                <div class="book-meta"><span>LIVRO 19 • FASE 3</span><span class="status status-available">Disponível</span></div>
+                <h3>Os Soberanos</h3>
+                <p class="book-summary">Em Kimera, o retorno do bruxo banido Maddock ameaça o reino, enquanto a princesa Emily precisa decidir se fará o sacrifício exigido pelo Violantis.</p>
+                <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="os-soberanos-summary-release-chronological">Ver mais <span aria-hidden="true">＋</span></button>
+                <p class="book-description-text" id="os-soberanos-summary-release-chronological" hidden>Em Kimera, uma nação oculta de magos e feiticeiros, o Rei Alfred Karzark enfrenta dias sombrios após uma negociação falha. A relação com aliados se fragiliza, e radicais defendem dominação sobre o mundo.<br><br>Um antigo bruxo banido, Maddock, retorna, buscando vingança. O Rei mobiliza forças mágicas para impedi-lo. A princesa Emily Karzark enfrenta um dilema: sacrificar tudo como Mestra do Violantis?</p>
+                <ul class="book-tags" aria-label="Tags do livro">
+                  <li>Emily Karzark</li>
+                  <li>Ação</li>
+                  <li>Drama</li>
+                </ul>
+                <a class="book-link" href="https://www.amazon.com.br/Os-Soberanos-Universo-Liter%C3%A1rio-Unity-ebook/dp/B0DR78YYY5/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=I74LGAJCIH41&amp;dib=eyJ2IjoiMSJ9.f-WeOjo4Z134NkBbMEW9UeMNVhohkIKMZ8DEWrBko4P3uq3gytBmkV3UKnNL7bZdQHa7rJxeuruhu3GawwCBK6ppDlaEA2GMOi38Yn4L_PqeslHAbgmn54hw3QvocY2uf8ei38lChd4V0Ui16gJkxFxAAsIjYLv9xSWf54TMGVGf6lGGgTlJgLY7HvjbsTJcDd9KCxt8EWbjbFRuvWUgGeBefd2LUjPk40exThe5Pes.SX91ugdme6Q5eb3xVo1b2pTCwd1lBI_yzoCP5wG-fPs&amp;dib_tag=se&amp;keywords=Os+Soberanos&amp;qid=1791074724&amp;s=digital-text&amp;sprefix=os+soberano%2Cdigital-text%2C193&amp;sr=1-4" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            </div>
+          </section>
+
+          <section class="book-shelf-panel" id="shelf-universos-paralelos" role="tabpanel" aria-labelledby="tab-universos-paralelos" tabindex="0" hidden>
+            <div class="shelf-toolbar">
+              <p>Explore histórias que acontecem em outras realidades.</p>
+              <div class="shelf-controls">
+                <span class="shelf-hint">Arraste para o lado</span>
+                <button class="shelf-arrow" type="button" data-direction="-1" aria-label="Ver universos paralelos anteriores" disabled>←</button>
+                <button class="shelf-arrow" type="button" data-direction="1" aria-label="Ver próximos universos paralelos" disabled>→</button>
+              </div>
+            </div>
+            <div class="book-grid" id="books-universos-paralelos" role="region" aria-label="Livros de universos paralelos">
+              <article class="book-card">
+                <img class="book-cover-image" src="assets/a-fenix-capa.png" alt="Capa de A Fênix, ambientado na Terra 618">
+                <div class="book-info">
+                  <div class="book-meta"><span>MULTIVERSO UNITY • TERRA 618</span><span class="status status-available">Disponível</span></div>
+                  <h3>A Fênix</h3>
+                  <p class="book-summary">Após um trauma que transforma sua vida, Nancy Miles assume responsabilidades inesperadas para buscar justiça e renascer como a Fênix.</p>
+                  <button class="book-description-toggle" type="button" aria-expanded="false" aria-controls="a-fenix-summary-parallel">Ver mais <span aria-hidden="true">＋</span></button>
+                  <p class="book-description-text" id="a-fenix-summary-parallel" hidden>A brilhante jornalista Nancy Myers vive a vida perfeita ao se casar com o seu grande amor da faculdade, Ethan Miles. Agora como Nancy Miles, eles vivem em Pilgrim como uma família perfeita, criando seu filho pequeno, Mark, um garoto fascinado por super-heróis, especialmente o Extraordinário.<br><br>Enquanto Nancy aproveita a vida confortável de uma jornalista de sucesso, Ethan é o CEO das Indústrias E-Tech e, secretamente, é o Extraordinário, herói de Pilgrim. Mas a vida perfeita se torna um pesadelo quando a vida de Nancy é alterada drasticamente e, vivendo marcada para sempre por um trauma profundo, ela assume responsabilidades que jamais imaginou para fazer justiça e renascer como uma Fênix.</p>
+                  <ul class="book-tags" aria-label="Tags do livro">
+                    <li>Fênix</li>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                  </ul>
+                  <a class="book-link" href="https://www.amazon.com.br/F%C3%AAnix-Multiverso-Unity-Livro-ebook/dp/B0D192P5J3/ref=sr_1_13?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3TZ45S2R7RJ65&amp;dib=eyJ2IjoiMSJ9.PGw8lT_T3j7Vk1nvhzIYJtt99dMu02Zlw87FvIXoBdu0owLjN9GxY7owXz8Q0dktjjsD5LEs1Kib6mdiEIdqaXMlQVCn8biSI51OQRiIy3r-DmiTKWwJ97x8MWnysHJl1xIhffPM5F_2BKwYGX5YwuG1oQekWugVYrYiuWiOB6rp0qi03iUB_KK36XJXLCI2i7gcvdrpfmcFPg5YS5eUFFkEqoMWynHCIJ-buv1nO5I.udW24ULpL71zJXSGSBELRQ4xc6hlIir8poGTLjgbMOI&amp;dib_tag=se&amp;keywords=Os+A+F%C3%AAnix&amp;qid=1791075376&amp;s=digital-text&amp;sprefix=os+a+f%C3%AAnix%2Cdigital-text%2C191&amp;sr=1-13" target="_blank" rel="noopener noreferrer">Comprar na Amazon <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+        <p class="demo-note">Os livros 1 a 5 pertencem à Fase 1, os livros 6 a 14 à Fase 2 e os livros 15 a 22 pertencem à Fase 3. O Extraordinário 3, Sicário Sombrio: 2ª Temporada, Os Alongs: Alfa Reset e Os Alongs: Omega Finis também fazem parte da Fase 3, mas ainda não têm posição definida.</p>
+      </section>
+
+      <section class="universe-section" id="universo" aria-labelledby="universe-title">
+        <div class="section-shell universe-inner">
+          <div class="universe-visual" aria-hidden="true">
+            <span class="universe-ring ring-a"></span>
+            <span class="universe-ring ring-b"></span>
+            <span class="universe-ring ring-c"></span>
+            <span class="universe-core">EM</span>
+            <span class="universe-coordinate">41° 24' 12.2"N<br>02° 10' 26.5"E</span>
+            <span class="universe-tag">MAPA DO MULTIVERSO</span>
+          </div>
+          <div class="universe-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> MAIS DO QUE UMA HISTÓRIA</p>
+            <h2 id="universe-title">Um universo.<br><span>Muitas perspectivas.</span></h2>
+            <p>
+              Por trás de cada máscara existe alguém tentando fazer o melhor
+              com aquilo que tem. Este é um mundo de poderes extraordinários,
+              consequências reais e pessoas que nem sempre concordam sobre o
+              que significa ser um herói.
+            </p>
+            <p>
+              Histórias independentes se encontram, escolhas de um livro
+              ecoam nos outros e cada novo personagem revela outra face de um
+              universo em transformação.
+            </p>
+            <a class="text-link" href="#curiosidades">Entre nos bastidores <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="world-section section-shell" id="sobre-o-mundo" aria-labelledby="world-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> ATLAS DO UNIVERSO</p>
+            <h2 id="world-title">Lugares que guardam<br><span>suas próprias histórias.</span></h2>
+          </div>
+          <p class="section-intro">
+            Cidades, refúgios e territórios além do mapa: conheça os cenários
+            onde estas aventuras começam — e onde seus segredos permanecem.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <article class="location-card location-card-metropolis">
+            <div class="location-art" aria-hidden="true">
+              <span class="location-moon"></span>
+              <span class="cityline cityline-back"></span>
+              <span class="cityline cityline-front"></span>
+              <span class="location-coordinate">ZONA 01 / SETOR CENTRAL</span>
+              <span class="location-symbol">I</span>
+            </div>
+            <div class="location-info">
+              <span class="location-type">CIDADE • PONTO DE PARTIDA</span>
+              <h3>Nova Aurora</h3>
+              <p>Uma metrópole que aprendeu a viver sob um céu diferente. Suas luzes escondem tanto quanto revelam.</p>
+              <span class="location-detail"><span></span> POPULAÇÃO: DESCONHECIDA</span>
+            </div>
+          </article>
+
+          <article class="location-card location-card-sanctuary">
+            <div class="location-art" aria-hidden="true">
+              <span class="sanctuary-sun"></span>
+              <span class="sanctuary-mountain mountain-back"></span>
+              <span class="sanctuary-mountain mountain-front"></span>
+              <span class="location-coordinate">ZONA 04 / ACESSO RESTRITO</span>
+              <span class="location-symbol">II</span>
+            </div>
+            <div class="location-info">
+              <span class="location-type">REFÚGIO • FORA DO MAPA</span>
+              <h3>O Santuário</h3>
+              <p>Um lugar escondido entre rotas esquecidas, onde alguns encontram abrigo e outros procuram respostas.</p>
+              <span class="location-detail"><span></span> ACESSO: POR CONVITE</span>
+            </div>
+          </article>
+
+          <article class="location-card location-card-frontier">
+            <div class="location-art" aria-hidden="true">
+              <span class="frontier-planet"></span>
+              <span class="frontier-horizon"></span>
+              <span class="location-coordinate">ZONA 09 / BORDA EXTERNA</span>
+              <span class="location-symbol">III</span>
+            </div>
+            <div class="location-info">
+              <span class="location-type">TERRITÓRIO • FRONTEIRA</span>
+              <h3>As Terras do Limiar</h3>
+              <p>Na borda do conhecido, antigas estruturas apontam para uma história muito anterior aos heróis.</p>
+              <span class="location-detail"><span></span> CARTOGRAFIA: INCOMPLETA</span>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">Locais e descrições demonstrativos — substitua pelos cenários do seu universo.</p>
+      </section>
+
+      <section class="curiosities-section section-shell" id="curiosidades" aria-labelledby="curiosities-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> ARQUIVOS CONFIDENCIAIS</p>
+            <h2 id="curiosities-title">O que existe<br><span>entre as páginas?</span></h2>
+          </div>
+          <p class="section-intro">
+            Pistas, ideias e pequenos detalhes para quem gosta de olhar duas
+            vezes. Alguns segredos ficam melhores sem resposta.
+          </p>
+        </div>
+        <div class="curiosity-grid">
+          <article class="curiosity-card curiosity-card-wide">
+            <span class="curiosity-number">ARQUIVO 001 / CRIAÇÃO</span>
+            <span class="curiosity-icon" aria-hidden="true">✳</span>
+            <h3>Toda história começa com<br>uma pergunta.</h3>
+            <p>E se o poder de salvar alguém também fosse capaz de destruí-lo?</p>
+            <span class="curiosity-decoration" aria-hidden="true">?</span>
+          </article>
+          <article class="curiosity-card curiosity-card-accent">
+            <span class="curiosity-number">ARQUIVO 002 / DETALHE</span>
+            <span class="curiosity-icon" aria-hidden="true">⌁</span>
+            <h3>As pistas estão<br>por toda parte.</h3>
+            <p>Um símbolo recorrente pode conectar histórias que parecem não ter nada em comum.</p>
+            <span class="curiosity-decoration" aria-hidden="true">⌁</span>
+          </article>
+          <article class="curiosity-card">
+            <span class="curiosity-number">ARQUIVO 003 / PROCESSO</span>
+            <span class="curiosity-icon" aria-hidden="true">✎</span>
+            <h3>Heróis também<br>mudam de ideia.</h3>
+            <p>Personagens crescem, erram e carregam o peso das escolhas de um livro para o outro.</p>
+            <span class="curiosity-decoration" aria-hidden="true">✳</span>
+          </article>
+        </div>
+        <p class="demo-note">Curiosidades demonstrativas — troque pelos bastidores reais da sua criação.</p>
+      </section>
+
+      <section class="next-chapter" id="proximo-capitulo" aria-labelledby="next-title">
+        <div class="next-chapter-inner section-shell">
+          <span class="next-kicker"><span class="pulse-dot"></span> TRANSMISSÃO DO FUTURO</span>
+          <div>
+            <h2 id="next-title">O próximo capítulo<br><span>começa aqui.</span></h2>
+            <p>A saga continua. Fique de olho para descobrir o que vem a seguir.</p>
+          </div>
+          <a class="button button-light" href="#contato">Fale com o autor <span aria-hidden="true">↗</span></a>
+          <span class="next-orbit next-orbit-a" aria-hidden="true"></span>
+          <span class="next-orbit next-orbit-b" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="author-section section-shell" id="autor" aria-labelledby="author-title">
+        <div class="author-mark" aria-hidden="true">JM<span>✳</span></div>
+        <div class="author-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> QUEM ESCREVE ESSE UNIVERSO</p>
+          <h2 id="author-title">Prazer, <span>João Muniz.</span></h2>
+          <p>
+            Escritor e criador de mundos, João acredita que as melhores
+            histórias de heróis são, no fundo, histórias sobre pessoas. Entre
+            novos personagens e universos em expansão, esta saga é um convite
+            para imaginar o que faríamos se o impossível batesse à nossa porta.
+          </p>
+          <a class="text-link" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="footer-main section-shell">
+        <a class="wordmark footer-wordmark" href="#inicio" aria-label="Infinity Forge — voltar ao início">
+          <img class="brand-logo" src="infinity-forge-logo.svg" alt="Infinity Forge">
+        </a>
+        <p>Um universo de histórias.<br>Uma página de cada vez.</p>
+        <a class="footer-contact" href="mailto:contato@seudominio.com">Entre em contato <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom section-shell">
+        <span>© <span id="current-year">2026</span> João Muniz. Todos os direitos reservados.</span>
+        <span>TÍTULOS, PERSONAGENS E E-MAIL SÃO EXEMPLOS DEMONSTRATIVOS.</span>
+        <a href="#inicio">VOLTAR AO TOPO ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
