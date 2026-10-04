@@ -1126,11 +1126,27 @@ h2 {
   background: #171923;
 }
 
+.location-card-pilgrim {
+  grid-column: 1 / -1;
+}
+
 .location-art {
   position: relative;
   height: 190px;
   overflow: hidden;
   isolation: isolate;
+}
+
+.location-card-pilgrim .location-art {
+  height: auto;
+  aspect-ratio: 2 / 1;
+}
+
+.location-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .location-art::before {

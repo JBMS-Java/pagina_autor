@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Paisagem urbana</title>
+  <desc id="description">Vista ampla de uma cidade comum durante o dia, com prédios, casas, árvores e ruas.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8fc9e8"/>
+      <stop offset="1" stop-color="#e8f2ec"/>
+    </linearGradient>
+    <linearGradient id="road" x2="0" y2="1">
+      <stop stop-color="#777d80"/>
+      <stop offset="1" stop-color="#41474b"/>
+    </linearGradient>
+    <linearGradient id="building" x2="0" y2="1">
+      <stop stop-color="#e9e4d9"/>
+      <stop offset="1" stop-color="#c7c4bd"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1280v640H0z"/>
+  <g fill="#fff" opacity=".72">
+    <path d="M120 120c0-21 17-38 38-38 15 0 28 9 34 22 6-4 13-6 21-6 23 0 41 18 41 41H120z"/>
+    <path d="M890 95c0-17 14-31 31-31 12 0 23 7 27 18 5-3 11-5 17-5 19 0 34 15 34 34H890z"/>
+  </g>
+  <path d="M0 340h1280v300H0z" fill="#bdc8c2"/>
+  <g fill="#9da9a7">
+    <path d="M20 252h95v178H20z"/>
+    <path d="M132 213h135v217H132z"/>
+    <path d="M285 282h87v148h-87z"/>
+    <path d="M390 186h126v244H390z"/>
+    <path d="M535 252h91v178h-91z"/>
+    <path d="M648 221h143v209H648z"/>
+    <path d="M815 273h101v157H815z"/>
+    <path d="M939 193h128v237H939z"/>
+    <path d="M1091 246h157v184h-157z"/>
+  </g>
+  <g fill="url(#building)" stroke="#b6b8b3" stroke-width="3">
+    <path d="M56 277h130v206H56z"/>
+    <path d="M205 238h149v245H205z"/>
+    <path d="M421 213h159v270H421z"/>
+    <path d="M604 281h122v202H604z"/>
+    <path d="M754 247h152v236H754z"/>
+    <path d="M937 219h144v264H937z"/>
+    <path d="M1102 281h135v202h-135z"/>
+  </g>
+  <g fill="#a7c4d0">
+    <path d="M76 300h24v34H76zm46 0h24v34h-24zm-46 55h24v34H76zm46 0h24v34h-24zm-46 55h24v34H76zm46 0h24v34h-24z"/>
+    <path d="M228 261h27v36h-27zm50 0h27v36h-27zm-50 58h27v36h-27zm50 0h27v36h-27zm-50 58h27v36h-27zm50 0h27v36h-27zm-50 58h27v36h-27zm50 0h27v36h-27z"/>
+    <path d="M446 237h29v39h-29zm55 0h29v39h-29zm-55 60h29v39h-29zm55 0h29v39h-29zm-55 60h29v39h-29zm55 0h29v39h-29zm-55 60h29v39h-29zm55 0h29v39h-29z"/>
+    <path d="M626 305h25v35h-25zm48 0h25v35h-25zm-48 56h25v35h-25zm48 0h25v35h-25zm-48 56h25v35h-25zm48 0h25v35h-25z"/>
+    <path d="M778 271h28v38h-28zm54 0h28v38h-28zm-54 58h28v38h-28zm54 0h28v38h-28zm-54 58h28v38h-28zm54 0h28v38h-28zm-54 58h28v38h-28zm54 0h28v38h-28z"/>
+    <path d="M960 245h27v37h-27zm51 0h27v37h-27zm-51 57h27v37h-27zm51 0h27v37h-27zm-51 57h27v37h-27zm51 0h27v37h-27zm-51 57h27v37h-27zm51 0h27v37h-27z"/>
+    <path d="M1120 305h24v34h-24zm46 0h24v34h-24zm-46 55h24v34h-24zm46 0h24v34h-24zm-46 55h24v34h-24zm46 0h24v34h-24z"/>
+  </g>
+  <g fill="#7d9c86">
+    <circle cx="24" cy="443" r="37"/><circle cx="370" cy="441" r="33"/>
+    <circle cx="728" cy="449" r="37"/><circle cx="1090" cy="445" r="38"/>
+    <circle cx="1250" cy="452" r="35"/>
+  </g>
+  <g fill="#6c8b76">
+    <path d="M15 446h18v78H15zm346-8h17v86h-17zm358 6h18v80h-18zm392-4h18v84h-18zm160 0h18v84h-18z"/>
+  </g>
+  <path d="M0 483h1280v157H0z" fill="#8d9b8f"/>
+  <path d="M0 504h1280v136H0z" fill="#c0c7b8"/>
+  <path d="M492 640 600 504h80l108 136z" fill="url(#road)"/>
+  <path d="M632 640h16l6-136h-28z" fill="#ece6ca"/>
+  <path d="M0 514h492l108-10H0zm788 0h492v-10H680z" fill="#e7e2d1"/>
+  <g fill="#fff" opacity=".76">
+    <path d="M130 534h100v8H130zm88 29h100v8H218zm-170 29h100v8H48z"/>
+    <path d="M943 532h118v8H943zm-74 30h118v8H869zm195 29h100v8h-100z"/>
+  </g>
+  <g transform="translate(277 453)">
+    <path d="M0 30h109v-31H28L11 12H0z" fill="#668a9d"/>
+    <path d="M31 4h34v22H18z" fill="#d5e3e5"/>
+    <circle cx="27" cy="32" r="10" fill="#33383b"/><circle cx="88" cy="32" r="10" fill="#33383b"/>
+  </g>
+  <g transform="translate(877 458)">
+    <path d="M0 26h88V3H22L8 12H0z" fill="#bd7656"/>
+    <path d="M25 6h28v16H14z" fill="#dce8e9"/>
+    <circle cx="23" cy="28" r="9" fill="#33383b"/><circle cx="71" cy="28" r="9" fill="#33383b"/>
+  </g>
+  <path d="M0 0h1280v640H0z" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+</svg>
