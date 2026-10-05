@@ -1114,6 +1114,73 @@ h2 {
   padding-block: 91px 100px;
 }
 
+.organizations-section {
+  padding-block: 91px 100px;
+  border-top: 1px solid var(--line);
+}
+
+.organization-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.organization-card {
+  position: relative;
+  min-height: 230px;
+  overflow: hidden;
+  padding: 22px 23px;
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, #191b27, #171923);
+}
+
+.organization-card:nth-child(3n + 2) {
+  background: linear-gradient(145deg, #222333, #1a1c28 78%);
+}
+
+.organization-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.organization-type,
+.organization-index {
+  color: #9596a1;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.organization-type {
+  color: var(--lime);
+}
+
+.organization-index {
+  color: #777984;
+}
+
+.organization-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 43px 0 10px;
+  font-family: var(--display);
+  font-size: 29px;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.organization-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 310px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.75;
+}
+
 .location-carousel {
   display: grid;
   gap: 14px;
@@ -1726,6 +1793,10 @@ h2 {
     gap: 13px;
   }
 
+  .organization-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .location-card {
     flex-basis: 100%;
   }
@@ -1893,8 +1964,21 @@ h2 {
 
   .books-section,
   .world-section,
+  .organizations-section,
   .curiosities-section {
     padding-block: 70px;
+  }
+
+  .organization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .organization-card {
+    min-height: 0;
+  }
+
+  .organization-card h3 {
+    margin-top: 32px;
   }
 
   .section-heading {
